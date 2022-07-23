@@ -36533,6 +36533,10 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+//<AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
+//<AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
+//<Home src={homeImg} scroll={scrollPercent} alt="Home" />
+//<Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
 var Restaurant = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
@@ -36599,23 +36603,7 @@ var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
         console.log('WMF');
       }
 
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(AddFood, {
-        src: _AddFood.default,
-        scroll: scrollPercent,
-        alt: "addFood"
-      }), /*#__PURE__*/_react.default.createElement(AddRestaurant, {
-        src: _AddRestaurant.default,
-        scroll: scrollPercent,
-        alt: "addRestaurant"
-      }), /*#__PURE__*/_react.default.createElement(Home, {
-        src: _Home.default,
-        scroll: scrollPercent,
-        alt: "Home"
-      }), /*#__PURE__*/_react.default.createElement(Restaurant, {
-        src: _Restaurant.default,
-        scroll: scrollPercent,
-        alt: "Restaurant"
-      }));
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null);
     }
   }]);
 
@@ -38023,7 +38011,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49944" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50094" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

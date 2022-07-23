@@ -6,6 +6,12 @@ import restaurantImg from '../../../../Assets/Images/WhatsMyFood/Restaurant.png'
 import addRestaurantImg from '../../../../Assets/Images/WhatsMyFood/AddRestaurant.png';
 import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
 
+
+//<AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
+//<AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
+//<Home src={homeImg} scroll={scrollPercent} alt="Home" />
+//<Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
+
 const Restaurant = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 15}%) scale(0.7)`,
@@ -81,10 +87,7 @@ class WhatsMyFoodImages extends Component {
     }
     return (
       <React.Fragment>
-        <AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-        <AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-        <Home src={homeImg} scroll={scrollPercent} alt="Home" />
-        <Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
+        
       </React.Fragment>
     );
   }
