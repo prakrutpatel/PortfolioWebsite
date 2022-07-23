@@ -33,7 +33,6 @@ right: 2vw;
 transform-origin: right center;
 /* border: 1px dashed red; */
 height: 80vh;
-filter: blur(0.6px);
 `;
 
 const VoistrapPhoneScore = styled.img.attrs({
@@ -48,7 +47,6 @@ transform-origin: left center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
-filter: blur(0.8px);
 `;
 
 const VoistrapPhonePeople = styled.img.attrs({
@@ -63,7 +61,6 @@ transform-origin: right center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
-filter: blur(1.2px);
 `;
 
 class VoistrapImages extends Component {

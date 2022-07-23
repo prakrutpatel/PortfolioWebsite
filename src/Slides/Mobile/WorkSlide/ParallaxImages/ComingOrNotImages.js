@@ -5,7 +5,7 @@ import cmgOrNotTabletImg from '../../../../Assets/Images/ComingOrNot/Tablet.png'
 import cmgOrNotIphoneImg from '../../../../Assets/Images/ComingOrNot/Iphone.png';
 import cmgOrNotComputerImg from '../../../../Assets/Images/ComingOrNot/Computer.png';
 
-
+//<Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
 const Iphone = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 22}%) scale(0.65)`,
@@ -22,7 +22,7 @@ height: 100vh;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 6}%) scale(0.35)`,
+    transform: `translate(0px,-${(scroll) * 6}%) scale(0.3)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -30,6 +30,19 @@ position: absolute;
 bottom: -180vh;
 transform-origin: right center;
 right:2vw;
+/* border: 1px dashed red; */
+height: 100vh; 
+`;
+const Computer = styled.img.attrs({
+  style: ({ scroll }) => ({
+    transform: `translate(0px,-${(scroll) * 22}%) scale(0.2)`,
+  }),
+})`
+transition: transform 0.2s ease-out;
+position: absolute;
+bottom: -320vh;
+transform-origin: left center;
+left:2vw;
 /* border: 1px dashed red; */
 height: 100vh; 
 `;
@@ -48,7 +61,8 @@ class ComingOrNotImages extends Component {
     return (
       <React.Fragment>
         <Tablet src={cmgOrNotTabletImg} scroll={scrollPercent} alt="cmgOrNotTablet" />
-        <Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
+        <Computer src={cmgOrNotComputerImg} scroll={scrollPercent} alt="cmgOrNotComputer" />
+        
       </React.Fragment>
     );
   }

@@ -34179,7 +34179,7 @@ var AboutMe = /*#__PURE__*/function (_Component) {
       var scrollPercent = this.state.scrollPercent;
       return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(AboutMeTitle, {
         scrollPercent: scrollPercent
-      }, "ABOUT ME"), /*#__PURE__*/_react.default.createElement(AboutMeDescription, null, "Full stack developer who cares about user experience. Serious passion for Machine Learning and App Development."));
+      }, "ABOUT ME"), /*#__PURE__*/_react.default.createElement(AboutMeDescription, null, "Full stack developer who cares about user experience with serious passion for Machine Learning and App Development."));
     }
   }]);
 
@@ -34640,6 +34640,10 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+//<AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
+//<AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
+//<Home src={homeImg} scroll={scrollPercent} alt="Home" />
+//<Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
 var Restaurant = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
@@ -34701,23 +34705,7 @@ var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
       var scrollOffsetInPercent = scrollOffset * 100 / scrollHeight + index - 1; // console.log('WMF scrollOffsetPercent ', scrollOffsetInPercent);
 
       scrollPercent -= scrollOffsetInPercent;
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(AddFood, {
-        src: _AddFood.default,
-        scroll: scrollPercent,
-        alt: "addFood"
-      }), /*#__PURE__*/_react.default.createElement(AddRestaurant, {
-        src: _AddRestaurant.default,
-        scroll: scrollPercent,
-        alt: "addRestaurant"
-      }), /*#__PURE__*/_react.default.createElement(Home, {
-        src: _Home.default,
-        scroll: scrollPercent,
-        alt: "Home"
-      }), /*#__PURE__*/_react.default.createElement(Restaurant, {
-        src: _Restaurant.default,
-        scroll: scrollPercent,
-        alt: "Restaurant"
-      }));
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null);
     }
   }]);
 
@@ -34791,6 +34779,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+//<Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
 var Iphone = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
@@ -34850,10 +34839,6 @@ var ComingOrNotImages = /*#__PURE__*/function (_Component) {
         src: _Tablet.default,
         scroll: scrollPercent,
         alt: "cmgOrNotTablet"
-      }), /*#__PURE__*/_react.default.createElement(Iphone, {
-        src: _Iphone.default,
-        scroll: scrollPercent,
-        alt: "cmgOrNotIphone"
       }));
     }
   }]);
@@ -35900,7 +35885,7 @@ var AboutMe = /*#__PURE__*/function (_Component) {
   _createClass(AboutMe, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(AboutMeTitle, null, "ABOUT ME"), /*#__PURE__*/_react.default.createElement(AboutMeDescription, null, "Full stack developer who cares about user experience. Serious passion for Machine Learning and App Development."));
+      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(AboutMeTitle, null, "ABOUT ME"), /*#__PURE__*/_react.default.createElement(AboutMeDescription, null, "Full stack developer who cares about user experience with serious passion for Machine Learning and App Development."));
     }
   }]);
 
@@ -36417,7 +36402,7 @@ var VoistrapPhoneMeetings = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.62)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: 2vw;\ntransform-origin: right center;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.6px);\n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: 2vw;\ntransform-origin: right center;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapPhoneScore = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
@@ -36426,7 +36411,7 @@ var VoistrapPhoneScore = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 3.5, "%) scale(0.5)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:10vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.8px);\n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:10vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapPhonePeople = _styledComponents.default.img.attrs({
   style: function style(_ref4) {
@@ -36435,7 +36420,7 @@ var VoistrapPhonePeople = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.45)")
     };
   }
-})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 10vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(1.2px);\n"])));
+})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 10vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapImages = /*#__PURE__*/function (_Component) {
   _inherits(VoistrapImages, _Component);
@@ -36666,7 +36651,7 @@ var _Iphone = _interopRequireDefault(require("../../../../Assets/Images/ComingOr
 
 var _Computer = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Computer.png"));
 
-var _templateObject, _templateObject2;
+var _templateObject, _templateObject2, _templateObject3;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36698,6 +36683,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
+//<Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
 var Iphone = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
@@ -36711,10 +36697,19 @@ var Tablet = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 6, "%) scale(0.5)")
+      transform: "translate(0px,-".concat(scroll * 6, "%) scale(0.3)")
     };
   }
 })(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -180vh;\ntransform-origin: right center;\nright:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
+
+var Computer = _styledComponents.default.img.attrs({
+  style: function style(_ref3) {
+    var scroll = _ref3.scroll;
+    return {
+      transform: "translate(0px,-".concat(scroll * 22, "%) scale(0.2)")
+    };
+  }
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -320vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
 
 var ComingOrNotImages = /*#__PURE__*/function (_Component) {
   _inherits(ComingOrNotImages, _Component);
@@ -36744,10 +36739,10 @@ var ComingOrNotImages = /*#__PURE__*/function (_Component) {
         src: _Tablet.default,
         scroll: scrollPercent,
         alt: "cmgOrNotTablet"
-      }), /*#__PURE__*/_react.default.createElement(Iphone, {
-        src: _Iphone.default,
+      }), /*#__PURE__*/_react.default.createElement(Computer, {
+        src: _Computer.default,
         scroll: scrollPercent,
-        alt: "cmgOrNotIphone"
+        alt: "cmgOrNotComputer"
       }));
     }
   }]);
@@ -38028,7 +38023,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55668" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49944" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
