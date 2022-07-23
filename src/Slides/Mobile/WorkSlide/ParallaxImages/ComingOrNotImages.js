@@ -22,7 +22,7 @@ height: 100vh;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 6}%) scale(0.5)`,
+    transform: `translate(0px,-${(scroll) * 6}%) scale(0.35)`,
   }),
 })`
 transition: transform 0.2s ease-out;
