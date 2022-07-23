@@ -61,8 +61,7 @@ class ComingOrNotImages extends Component {
     return (
       <React.Fragment>
         <Tablet src={cmgOrNotTabletImg} scroll={scrollPercent} alt="cmgOrNotTablet" />
-        <Computer src={cmgOrNotComputerImg} scroll={scrollPercent} alt="cmgOrNotComputer" />
-        
+        <></>
       </React.Fragment>
     );
   }

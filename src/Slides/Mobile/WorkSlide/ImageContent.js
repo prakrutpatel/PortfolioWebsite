@@ -6,9 +6,6 @@ import VoistrapImages from './ParallaxImages/VoistrapImages';
 import WhatsMyFoodImages from './ParallaxImages/WhatsMyFoodImages';
 import ComingOrNotImages from './ParallaxImages/ComingOrNotImages';
 import TeslaImages from './ParallaxImages/TeslaImages';
-import KosenImages from './ParallaxImages/KosenImages';
-import VoistrapWebImages from './ParallaxImages/VoistrapWebImages';
-
 const ImageContainer = styled.div`
 /* border: 0.1px dashed black; */
 width:100%;
