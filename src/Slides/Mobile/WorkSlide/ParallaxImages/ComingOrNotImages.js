@@ -35,7 +35,7 @@ height: 100vh;
 `;
 const Computer = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 22}%) scale(0.2)`,
+    transform: `translate(0px,-${(scroll) * 22}%) scale(0.45)`,
   }),
 })`
 transition: transform 0.2s ease-out;

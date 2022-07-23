@@ -36694,7 +36694,7 @@ var Computer = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
     var scroll = _ref3.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 22, "%) scale(0.2)")
+      transform: "translate(0px,-".concat(scroll * 22, "%) scale(0.45)")
     };
   }
 })(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -320vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
