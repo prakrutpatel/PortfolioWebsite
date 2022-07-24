@@ -34723,8 +34723,8 @@ var _default = WhatsMyFoodImages;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/WhatsMyFood/Home.png":"Assets/Images/WhatsMyFood/Home.png","../../../../Assets/Images/WhatsMyFood/Restaurant.png":"Assets/Images/WhatsMyFood/Restaurant.png","../../../../Assets/Images/WhatsMyFood/AddRestaurant.png":"Assets/Images/WhatsMyFood/AddRestaurant.png","../../../../Assets/Images/WhatsMyFood/AddFood.png":"Assets/Images/WhatsMyFood/AddFood.png"}],"Assets/Images/ComingOrNot/Tablet.png":[function(require,module,exports) {
 module.exports = "/Tablet.3851521b.png";
-},{}],"Assets/Images/ComingOrNot/Iphone.png":[function(require,module,exports) {
-module.exports = "/Iphone.024150c9.png";
+},{}],"Assets/Images/ComingOrNot/TV.png":[function(require,module,exports) {
+module.exports = "/TV.5dd1a056.png";
 },{}],"Assets/Images/ComingOrNot/Computer.png":[function(require,module,exports) {
 module.exports = "/Computer.b5b243f0.png";
 },{}],"Slides/WideScreen/WorkSlide/ParallaxImages/ComingOrNotImages.js":[function(require,module,exports) {
@@ -34743,7 +34743,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Tablet = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Tablet.png"));
 
-var _Iphone = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Iphone.png"));
+var _TV = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/TV.png"));
 
 var _Computer = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Computer.png"));
 
@@ -34779,33 +34779,32 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-//<Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
-var Iphone = _styledComponents.default.img.attrs({
+var TV = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 2, "%)")
+      transform: "translate(0px,-".concat(scroll * 12, "%)")
     };
   }
-})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-40vh;\nleft: -5vw;\n/* border: 1px dashed red; */\nheight: 60vh;\n"])));
+})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-85vh;\nleft: -5vw;\n/* border: 1px dashed red; */\nheight: 100vh;\n"])));
 
 var Tablet = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 6, "%) scale(0.7)")
+      transform: "translate(0px,-".concat(scroll * 8, "%) scale(0.55)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -80vh;\nright:-8vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -70vh;\nright:-10vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
 var Computer = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
     var scroll = _ref3.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 8, "%) scale(0.9)")
+      transform: "translate(0px,-".concat(scroll * 2, "%)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -40vh;\nleft:0vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -50vh;\nleft:-5vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
 var ComingOrNotImages = /*#__PURE__*/function (_Component) {
   _inherits(ComingOrNotImages, _Component);
@@ -34839,6 +34838,10 @@ var ComingOrNotImages = /*#__PURE__*/function (_Component) {
         src: _Tablet.default,
         scroll: scrollPercent,
         alt: "cmgOrNotTablet"
+      }), /*#__PURE__*/_react.default.createElement(TV, {
+        src: _TV.default,
+        scroll: scrollPercent,
+        alt: "cmgOrNotTV"
       }));
     }
   }]);
@@ -34855,7 +34858,7 @@ ComingOrNotImages.propTypes = {
 };
 var _default = ComingOrNotImages;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/ComingOrNot/Tablet.png":"Assets/Images/ComingOrNot/Tablet.png","../../../../Assets/Images/ComingOrNot/Iphone.png":"Assets/Images/ComingOrNot/Iphone.png","../../../../Assets/Images/ComingOrNot/Computer.png":"Assets/Images/ComingOrNot/Computer.png"}],"Assets/Images/Tesla/Tyre.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/ComingOrNot/Tablet.png":"Assets/Images/ComingOrNot/Tablet.png","../../../../Assets/Images/ComingOrNot/TV.png":"Assets/Images/ComingOrNot/TV.png","../../../../Assets/Images/ComingOrNot/Computer.png":"Assets/Images/ComingOrNot/Computer.png"}],"Assets/Images/Tesla/Tyre.png":[function(require,module,exports) {
 module.exports = "/Tyre.f04a1585.png";
 },{}],"Assets/Images/Tesla/Heat.png":[function(require,module,exports) {
 module.exports = "/Heat.1692c848.png";
@@ -35259,10 +35262,10 @@ var Work = /*#__PURE__*/function (_Component) {
       projectName: 'Context RCNN',
       projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models into a human-in-the-loop continuous learning system.',
       projectType: 'ML RESEACH',
-      roles: ['Machine Learning Engineer', 'Coder']
+      roles: ['Machine Learning Engineer']
     }, {
       number: '03',
-      projectName: 'Mobile MakerSpace',
+      projectName: 'MakerSpace',
       projectDesc: 'Responsive user facing web application for creating modular line drawings for CNC and laser cutters',
       projectType: 'WEB APP',
       roles: ['Front-end Developer', 'UI Designer']
@@ -36390,7 +36393,7 @@ var VoistrapPhoneHome = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 15, "%) scale(0.7)")
+      transform: "translate(0px,-".concat(scroll * 15, "%) scale(0.66)")
     };
   }
 })(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -170vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
@@ -36399,7 +36402,7 @@ var VoistrapPhoneMeetings = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.62)")
+      transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.66)")
     };
   }
 })(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: 2vw;\ntransform-origin: right center;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
@@ -36408,19 +36411,19 @@ var VoistrapPhoneScore = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
     var scroll = _ref3.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 3.5, "%) scale(0.5)")
+      transform: "translate(0px,-".concat(scroll * 3.5, "%) scale(0.66)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:10vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:2vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapPhonePeople = _styledComponents.default.img.attrs({
   style: function style(_ref4) {
     var scroll = _ref4.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.45)")
+      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.66)")
     };
   }
-})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 10vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
+})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 2vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapImages = /*#__PURE__*/function (_Component) {
   _inherits(VoistrapImages, _Component);
@@ -36635,7 +36638,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Tablet = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Tablet.png"));
 
-var _Iphone = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Iphone.png"));
+var _TV = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/TV.png"));
 
 var _Computer = _interopRequireDefault(require("../../../../Assets/Images/ComingOrNot/Computer.png"));
 
@@ -36671,33 +36674,32 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-//<Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
-var Iphone = _styledComponents.default.img.attrs({
+var TV = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 22, "%) scale(0.65)")
+      transform: "translate(0px,-".concat(scroll * 15, "%) scale(1.1)")
     };
   }
-})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -320vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
+})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -130vh;\ntransform-origin: left center;\nleft:-5vw;\n/* border: 1px dashed red; */\nheight:50vh; \n"])));
 
 var Tablet = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 6, "%) scale(0.3)")
+      transform: "translate(0px,-".concat(scroll * 3, "%) scale(0.5)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -180vh;\ntransform-origin: right center;\nright:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -90vh;\ntransform-origin: right center;\nright:25vw;\n/* border: 1px dashed red; */\nheight: 50vh; \n"])));
 
 var Computer = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
     var scroll = _ref3.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 22, "%) scale(0.45)")
+      transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.85)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -320vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 100vh; \n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -105vh;\ntransform-origin: left center;\nleft:5vw;\n/* border: 1px dashed red; */\nheight: 50vh; \n"])));
 
 var ComingOrNotImages = /*#__PURE__*/function (_Component) {
   _inherits(ComingOrNotImages, _Component);
@@ -36727,7 +36729,15 @@ var ComingOrNotImages = /*#__PURE__*/function (_Component) {
         src: _Tablet.default,
         scroll: scrollPercent,
         alt: "cmgOrNotTablet"
-      }), /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null));
+      }), /*#__PURE__*/_react.default.createElement(Computer, {
+        src: _Computer.default,
+        scroll: scrollPercent,
+        alt: "cmgOrNotComputer"
+      }), /*#__PURE__*/_react.default.createElement(TV, {
+        src: _TV.default,
+        scroll: scrollPercent,
+        alt: "cmgOrNotTV"
+      }));
     }
   }]);
 
@@ -36743,7 +36753,7 @@ ComingOrNotImages.propTypes = {
 };
 var _default = ComingOrNotImages;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/ComingOrNot/Tablet.png":"Assets/Images/ComingOrNot/Tablet.png","../../../../Assets/Images/ComingOrNot/Iphone.png":"Assets/Images/ComingOrNot/Iphone.png","../../../../Assets/Images/ComingOrNot/Computer.png":"Assets/Images/ComingOrNot/Computer.png"}],"Slides/Mobile/WorkSlide/ParallaxImages/TeslaImages.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/ComingOrNot/Tablet.png":"Assets/Images/ComingOrNot/Tablet.png","../../../../Assets/Images/ComingOrNot/TV.png":"Assets/Images/ComingOrNot/TV.png","../../../../Assets/Images/ComingOrNot/Computer.png":"Assets/Images/ComingOrNot/Computer.png"}],"Slides/Mobile/WorkSlide/ParallaxImages/TeslaImages.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37146,10 +37156,10 @@ var Work = /*#__PURE__*/function (_Component) {
       projectName: 'Context RCNN',
       projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models into a human-in-the-loop continuous learning system.',
       projectType: 'ML RESEACH',
-      roles: ['Machine Learning Engineer', 'Coder']
+      roles: ['Machine Learning Engineer']
     }, {
       number: '03',
-      projectName: 'Mobile MakerSpace',
+      projectName: 'MakerSpace',
       projectDesc: 'Responsive user facing web application for creating modular line drawings for CNC and laser cutters',
       projectType: 'WEB APP',
       roles: ['Front-end Developer', 'UI Designer']
@@ -37705,7 +37715,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50455" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50193" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
