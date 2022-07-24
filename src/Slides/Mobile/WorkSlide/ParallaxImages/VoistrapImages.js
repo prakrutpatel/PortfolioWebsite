@@ -9,7 +9,7 @@ import voistrapScoreImg from '../../../../Assets/Images/Voistrap/Score.png';
 
 const VoistrapPhoneHome = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 15}%) scale(0.66)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -23,7 +23,7 @@ height: 80vh;
 
 const VoistrapPhoneMeetings = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.62)`,
+    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.66)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -37,12 +37,12 @@ height: 80vh;
 
 const VoistrapPhoneScore = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 3.5}%) scale(0.5)`,
+    transform: `translate(0px,-${(scroll) * 3.5}%) scale(0.66)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 bottom:-110vh;
-left:10vw;
+left:2vw;
 transform-origin: left center;
 position: absolute;
 /* border: 1px dashed red; */
@@ -51,12 +51,12 @@ height: 80vh;
 
 const VoistrapPhonePeople = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.45)`,
+    transform: `translate(0px,-${(scroll) * 2}%) scale(0.66)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 bottom:-105vh;
-right: 10vw;
+right: 2vw;
 transform-origin: right center;
 position: absolute;
 /* border: 1px dashed red; */

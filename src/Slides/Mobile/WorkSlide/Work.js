@@ -41,11 +41,11 @@ class Work extends Component {
         projectName: 'Context RCNN',
         projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models into a human-in-the-loop continuous learning system.',
         projectType: 'ML RESEACH',
-        roles: ['Machine Learning Engineer', 'Coder'],
+        roles: ['Machine Learning Engineer'],
       },
       {
         number: '03',
-        projectName: 'Mobile MakerSpace',
+        projectName: 'MakerSpace',
         projectDesc: 'Responsive user facing web application for creating modular line drawings for CNC and laser cutters',
         projectType: 'WEB APP',
         roles: ['Front-end Developer', 'UI Designer'],
