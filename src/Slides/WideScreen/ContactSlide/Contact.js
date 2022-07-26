@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import githubImg from '../../../Assets/Images/Social/git.svg';
+import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import mailImg from '../../../Assets/Images/Social/mail.svg';
 import instaImg from '../../../Assets/Images/Social/insta.svg';
 import linkedInImg from '../../../Assets/Images/Social/linkedin.svg';
+import Pdf from '../../../Assets/Images/Social/Patel_Resume.pdf';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
@@ -17,7 +19,7 @@ const Container = styled.section`
 
 const ContactTitle = styled.div.attrs({
   style: ({ scrollPercent }) => ({
-    transform: `translateX(${(scrollPercent) * 8}%)`,
+    transform: `translateX(${(scrollPercent) * 7}%)`,
   }),
 })`
   transition: transform 0.5s ease-out;
@@ -40,8 +42,8 @@ const ContactTitle = styled.div.attrs({
 
 const SocialMediaIcons = styled.div`
   /* border: 1px solid black; */
-  margin-left: 20%;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
   z-index: 1;
   transform: translateY(210%);
   display: flex;
@@ -91,6 +93,7 @@ class Contact extends Component {
           <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:p.prakrut@gmail.com" />
           <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/theprakrut" />
           <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/prakrut-patel" />
+          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
       </Container>
     );
