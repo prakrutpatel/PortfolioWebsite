@@ -87,14 +87,7 @@ class WhatsMyFoodImages extends Component {
     }
     return (
       <React.Fragment>
-        <>
-        </>
-        <>
-        </>
-        <>
-        </>
-        <>
-        </>
+        
       </React.Fragment>
     );
   }

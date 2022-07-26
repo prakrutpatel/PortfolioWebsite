@@ -6,7 +6,7 @@ import cmgOrNotTVImg from '../../../../Assets/Images/ComingOrNot/TV.png';
 import cmgOrNotComputerImg from '../../../../Assets/Images/ComingOrNot/Computer.png';
 const TV = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(1.1)`,
+    transform: `translate(0px,-${(scroll) * 15}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -20,20 +20,20 @@ height:50vh;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 3}%) scale(0.5)`,
+    transform: `translate(0px,-${(scroll) * 3}%) scale(0.3)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom: -90vh;
 transform-origin: right center;
-right:25vw;
+right:20vw;
 /* border: 1px dashed red; */
 height: 50vh; 
 `;
 const Computer = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.85)`,
+    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.7)`,
   }),
 })`
 transition: transform 0.2s ease-out;

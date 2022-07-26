@@ -11,7 +11,7 @@ import device from '../../../Assets/Responsive/breakpoints';
 
 const Container = styled.section`
     margin-top:20vh;
-    height: 100vh;
+    height: 150vh;
     width:100%;
     /* border: 1px solid blue; */
     display: flex;
