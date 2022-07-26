@@ -15,8 +15,8 @@ const VoistrapPhoneHome = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom: -170vh;
-transform-origin: left center;
-left:2vw;
+transform-origin: center;
+left:-18vw;
 /* border: 1px dashed red; */
 height: 80vh; 
 `;
@@ -29,8 +29,8 @@ const VoistrapPhoneMeetings = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom:-125vh;
-right: 2vw;
-transform-origin: right center;
+right: -18vw;
+transform-origin: center;
 /* border: 1px dashed red; */
 height: 80vh;
 `;
@@ -42,8 +42,8 @@ const VoistrapPhoneScore = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 bottom:-110vh;
-left:2vw;
-transform-origin: left center;
+left:-18vw;
+transform-origin: center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
@@ -56,8 +56,8 @@ const VoistrapPhonePeople = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 bottom:-105vh;
-right: 2vw;
-transform-origin: right center;
+right: -18vw;
+transform-origin: center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;

@@ -36408,7 +36408,7 @@ var VoistrapPhoneHome = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 15, "%) scale(0.5)")
     };
   }
-})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -170vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -170vh;\ntransform-origin: center;\nleft:-18vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
 var VoistrapPhoneMeetings = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
@@ -36417,7 +36417,7 @@ var VoistrapPhoneMeetings = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.5)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: 2vw;\ntransform-origin: right center;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: -18vw;\ntransform-origin: center;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapPhoneScore = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
@@ -36426,7 +36426,7 @@ var VoistrapPhoneScore = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 3.5, "%) scale(0.5)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:2vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:-18vw;\ntransform-origin: center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapPhonePeople = _styledComponents.default.img.attrs({
   style: function style(_ref4) {
@@ -36435,7 +36435,7 @@ var VoistrapPhonePeople = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.5)")
     };
   }
-})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 2vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
+})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: -18vw;\ntransform-origin: center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var VoistrapImages = /*#__PURE__*/function (_Component) {
   _inherits(VoistrapImages, _Component);
@@ -37308,7 +37308,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 100vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
+var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 75vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
 var SkillsTitle = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-family: 'AvenirHeavy';\n  color: #000;\n  @media ", " {\n    font-size: 40px;\n  }\n  @media ", " {\n    font-size: 50px;\n  }\n  @media ", " {\n    font-size: 60px;\n  }\n  @media ", " {\n    font-size: 90px;\n  }\n  @media ", " {\n    font-size: 95px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
@@ -37665,6 +37665,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\nhtml, body { margin: 0;}\n*, *:before, *:after { box-sizing: border-box; }\n"])));
+console.log(window.innerWidth);
 
 var App = /*#__PURE__*/function (_Component) {
   _inherits(App, _Component);
