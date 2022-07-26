@@ -35260,7 +35260,7 @@ var Work = /*#__PURE__*/function (_Component) {
     }, {
       number: '02',
       projectName: 'Context RCNN',
-      projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models into a human-in-the-loop continuous learning system.',
+      projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models.',
       projectType: 'ML RESEACH',
       roles: ['Machine Learning Engineer']
     }, {
@@ -35410,7 +35410,7 @@ var SkillsTitle = _styledComponents.default.div.attrs({
       transform: "translateX(-".concat(scrollPercent * 10, "%)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:40%;\n  right:-50%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:20%;\n  right:-50%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
 var SkillsList = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid #EFEFEF; */\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  font-family: 'AvenirRoman';\n  text-align: left;\n  margin-left: 15%;\n  margin-right: 10%;\n  z-index: 1;\n  transform: translateY(30%);\n  @media ", " {\n    font-size: 35px;\n  }\n  @media ", " {\n    font-size: 40px;\n  }\n  @media ", " {\n    font-size: 70px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
@@ -35485,12 +35485,16 @@ var _default = Skills;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Assets/Images/Social/git.svg":[function(require,module,exports) {
 module.exports = "/git.1a000b88.svg";
+},{}],"Assets/Images/Social/resume.svg":[function(require,module,exports) {
+module.exports = "/resume.b61f2bca.svg";
 },{}],"Assets/Images/Social/mail.svg":[function(require,module,exports) {
 module.exports = "/mail.00c836f6.svg";
 },{}],"Assets/Images/Social/insta.svg":[function(require,module,exports) {
 module.exports = "/insta.54ac694c.svg";
 },{}],"Assets/Images/Social/linkedin.svg":[function(require,module,exports) {
 module.exports = "/linkedin.a58775df.svg";
+},{}],"Assets/Images/Social/Patel_Resume.pdf":[function(require,module,exports) {
+module.exports = "/Patel_Resume.c51d7770.pdf";
 },{}],"Slides/WideScreen/ContactSlide/SocialLogo.js":[function(require,module,exports) {
 "use strict";
 
@@ -35608,11 +35612,15 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _git = _interopRequireDefault(require("../../../Assets/Images/Social/git.svg"));
 
+var _resume = _interopRequireDefault(require("../../../Assets/Images/Social/resume.svg"));
+
 var _mail = _interopRequireDefault(require("../../../Assets/Images/Social/mail.svg"));
 
 var _insta = _interopRequireDefault(require("../../../Assets/Images/Social/insta.svg"));
 
 var _linkedin = _interopRequireDefault(require("../../../Assets/Images/Social/linkedin.svg"));
+
+var _Patel_Resume = _interopRequireDefault(require("../../../Assets/Images/Social/Patel_Resume.pdf"));
 
 var _SocialLogo = _interopRequireDefault(require("./SocialLogo"));
 
@@ -35656,12 +35664,12 @@ var ContactTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
     var scrollPercent = _ref.scrollPercent;
     return {
-      transform: "translateX(".concat(scrollPercent * 8, "%)")
+      transform: "translateX(".concat(scrollPercent * 7, "%)")
     };
   }
 })(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.5s ease-out;\n  font-family: 'AvenirHeavy';\n  font-size: 200px;\n  position: absolute;\n  color: #EEE;\n  top:12%;\n  left:-70%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
-var SocialMediaIcons = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid black; */\n  margin-left: 20%;\n  margin-right: 3%;\n  z-index: 1;\n  transform: translateY(210%);\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-around;\n"])));
+var SocialMediaIcons = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid black; */\n  margin-left: 10%;\n  margin-right: 10%;\n  z-index: 1;\n  transform: translateY(210%);\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-around;\n"])));
 
 var Contact = /*#__PURE__*/function (_Component) {
   _inherits(Contact, _Component);
@@ -35738,6 +35746,10 @@ var Contact = /*#__PURE__*/function (_Component) {
         imgURL: _linkedin.default,
         alternate: "Linkedin",
         redirectURL: "https://www.linkedin.com/in/prakrut-patel"
+      }), /*#__PURE__*/_react.default.createElement(_SocialLogo.default, {
+        imgURL: _resume.default,
+        alternate: "Resume",
+        redirectURL: _Patel_Resume.default
       })));
     }
   }]);
@@ -35747,7 +35759,7 @@ var Contact = /*#__PURE__*/function (_Component) {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","./SocialLogo":"Slides/WideScreen/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/Mobile/HeroSlide/NameAndJobTitle.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/resume.svg":"Assets/Images/Social/resume.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","../../../Assets/Images/Social/Patel_Resume.pdf":"Assets/Images/Social/Patel_Resume.pdf","./SocialLogo":"Slides/WideScreen/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/Mobile/HeroSlide/NameAndJobTitle.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37296,7 +37308,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 150vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
+var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 100vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
 var SkillsTitle = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-family: 'AvenirHeavy';\n  color: #000;\n  @media ", " {\n    font-size: 40px;\n  }\n  @media ", " {\n    font-size: 50px;\n  }\n  @media ", " {\n    font-size: 60px;\n  }\n  @media ", " {\n    font-size: 90px;\n  }\n  @media ", " {\n    font-size: 95px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
@@ -37325,11 +37337,7 @@ var Skills = /*#__PURE__*/function (_Component) {
 
 var _default = Skills;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Assets/Images/Social/twitter.svg":[function(require,module,exports) {
-module.exports = "/twitter.920364fd.svg";
-},{}],"Assets/Images/Social/dribbble.svg":[function(require,module,exports) {
-module.exports = "/dribbble.72bc2d7b.svg";
-},{}],"Slides/Mobile/ContactSlide/SocialLogo.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/Mobile/ContactSlide/SocialLogo.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37426,7 +37434,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _twitter = _interopRequireDefault(require("../../../Assets/Images/Social/twitter.svg"));
+var _resume = _interopRequireDefault(require("../../../Assets/Images/Social/resume.svg"));
 
 var _git = _interopRequireDefault(require("../../../Assets/Images/Social/git.svg"));
 
@@ -37434,9 +37442,9 @@ var _mail = _interopRequireDefault(require("../../../Assets/Images/Social/mail.s
 
 var _insta = _interopRequireDefault(require("../../../Assets/Images/Social/insta.svg"));
 
-var _dribbble = _interopRequireDefault(require("../../../Assets/Images/Social/dribbble.svg"));
-
 var _linkedin = _interopRequireDefault(require("../../../Assets/Images/Social/linkedin.svg"));
+
+var _Patel_Resume = _interopRequireDefault(require("../../../Assets/Images/Social/Patel_Resume.pdf"));
 
 var _SocialLogo = _interopRequireDefault(require("./SocialLogo"));
 
@@ -37474,7 +37482,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    margin-top:20vh;\n    height: 150vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    margin-bottom:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    margin-bottom:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
+var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 100vh;\n    width:100%;\n    /* border: 1px solid blue; */\n    display: flex;\n    flex-flow: column wrap;\n    justify-content: center;\n    align-content: flex-start;\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:60px;\n    }\n    @media ", " {\n    padding-left:90px;\n    margin-bottom:90px;\n    }\n    @media ", " {\n    padding-left:120px;\n    margin-bottom:120px;\n    }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
 var ContactTitle = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-family: 'AvenirHeavy';\n  color: #000;\n  @media ", " {\n    font-size: 40px;\n  }\n  @media ", " {\n    font-size: 50px;\n  }\n  @media ", " {\n    font-size: 60px;\n  }\n  @media ", " {\n    font-size: 90px;\n  }\n  @media ", " {\n    font-size: 95px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
@@ -37510,6 +37518,10 @@ var Contact = /*#__PURE__*/function (_Component) {
         imgURL: _linkedin.default,
         alternate: "Linkedin",
         redirectURL: "https://www.linkedin.com/in/prakrut-patel"
+      }), /*#__PURE__*/_react.default.createElement(_SocialLogo.default, {
+        imgURL: _resume.default,
+        alternate: "Resume",
+        redirectURL: _Patel_Resume.default
       })));
     }
   }]);
@@ -37519,7 +37531,7 @@ var Contact = /*#__PURE__*/function (_Component) {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/twitter.svg":"Assets/Images/Social/twitter.svg","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/dribbble.svg":"Assets/Images/Social/dribbble.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","./SocialLogo":"Slides/Mobile/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/resume.svg":"Assets/Images/Social/resume.svg","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","../../../Assets/Images/Social/Patel_Resume.pdf":"Assets/Images/Social/Patel_Resume.pdf","./SocialLogo":"Slides/Mobile/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -37715,7 +37727,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52886" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55493" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

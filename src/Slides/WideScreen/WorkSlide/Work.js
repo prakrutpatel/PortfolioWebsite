@@ -38,7 +38,7 @@ class Work extends Component {
       {
         number: '02',
         projectName: 'Context RCNN',
-        projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models into a human-in-the-loop continuous learning system.',
+        projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models.',
         projectType: 'ML RESEACH',
         roles: ['Machine Learning Engineer'],
       },

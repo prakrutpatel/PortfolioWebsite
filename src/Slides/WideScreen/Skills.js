@@ -19,7 +19,7 @@ const SkillsTitle = styled.div.attrs({
   font-family: 'AvenirHeavy';
   position: absolute;
   color: #EEE;
-  top:40%;
+  top:20%;
   right:-50%;
   @media ${device.laptop} {
     font-size: 180px;
