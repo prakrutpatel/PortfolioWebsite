@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import githubImg from '../../../Assets/Images/Social/git.svg';
-import mailImg from '../../../Assets/Images/Social/mail.svg';
-import instaImg from '../../../Assets/Images/Social/insta.svg';
-import linkedInImg from '../../../Assets/Images/Social/linkedin.svg';
+import resumeImg from '../../../Assets/Images/Social/resume.svg';
+import Pdf from '../../../Assets/Images/Social/Patel_Resume.pdf';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
-const Container = styled.section`
-    height:80vh;/* Since pageSplitTime is 1.4 */
+
+const Container = styled.div`
+    height: 60vh;/* Since pageSplitTime is 1.4 */
     width:100%;
     /* border: 1px solid blue; */
     position: relative;
     overflow: hidden;
 `;
 
+
 const ContactTitle = styled.div.attrs({
   style: ({ scrollPercent }) => ({
-    transform: `translateX(${(scrollPercent) * 7}%)`,
+    transform: `translateX(-${(scrollPercent) * 7}%)`,
   }),
 })`
-  transition: transform 0.5s ease-out;
+  transition: transform 0.2s ease-out;
   font-family: 'AvenirHeavy';
-  font-size: 200px;
   position: absolute;
   color: #EEE;
   top:12%;
-  left:-70%;
+  right:-40%;
   @media ${device.laptop} {
     font-size: 180px;
   }
@@ -49,7 +48,11 @@ const SocialMediaIcons = styled.div`
   justify-content: space-around;
 `;
 
-class Contact extends Component {
+
+
+
+
+class Resume extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,8 +77,9 @@ class Contact extends Component {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
     let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 760) / documentElement.scrollHeight;
-    if (sp >= minlimit && sp <= 100) {
+    const minlimit = (documentElement.clientHeight * 800) / documentElement.scrollHeight;
+    const maxlimit = (documentElement.clientHeight * 1250) / documentElement.scrollHeight;
+    if (sp >= minlimit && sp <= maxlimit + 3) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
     }
@@ -85,16 +89,12 @@ class Contact extends Component {
     const { scrollPercent } = this.state;
     return (
       <Container>
-        <ContactTitle scrollPercent={scrollPercent}>CONTACT</ContactTitle>
+        <ContactTitle scrollPercent={scrollPercent}>RESUME</ContactTitle>
         <SocialMediaIcons>
-          <SocialLogo imgURL={githubImg} alternate="Github" redirectURL="https://github.com/prakrutpatel" />
-          <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:p.prakrut@gmail.com" />
-          <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/theprakrut" />
-          <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/prakrut-patel" />
+          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
       </Container>
     );
   }
 }
-
-export default Contact;
+export default Resume;
