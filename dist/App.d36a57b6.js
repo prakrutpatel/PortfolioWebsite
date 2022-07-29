@@ -35401,7 +35401,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 120vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 100vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
 
 var SkillsTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
@@ -35483,16 +35483,8 @@ var Skills = /*#__PURE__*/function (_Component) {
 
 var _default = Skills;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Assets/Images/Social/git.svg":[function(require,module,exports) {
-module.exports = "/git.1a000b88.svg";
-},{}],"Assets/Images/Social/resume.svg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Assets/Images/Social/resume.svg":[function(require,module,exports) {
 module.exports = "/resume.b61f2bca.svg";
-},{}],"Assets/Images/Social/mail.svg":[function(require,module,exports) {
-module.exports = "/mail.00c836f6.svg";
-},{}],"Assets/Images/Social/insta.svg":[function(require,module,exports) {
-module.exports = "/insta.54ac694c.svg";
-},{}],"Assets/Images/Social/linkedin.svg":[function(require,module,exports) {
-module.exports = "/linkedin.a58775df.svg";
 },{}],"Assets/Images/Social/Patel_Resume.pdf":[function(require,module,exports) {
 module.exports = "/Patel_Resume.c51d7770.pdf";
 },{}],"Slides/WideScreen/ContactSlide/SocialLogo.js":[function(require,module,exports) {
@@ -35598,7 +35590,7 @@ SocialLogo.propTypes = {
 };
 var _default = SocialLogo;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/WideScreen/ContactSlide/Contact.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/WideScreen/ContactSlide/Resume.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35610,15 +35602,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-var _git = _interopRequireDefault(require("../../../Assets/Images/Social/git.svg"));
-
 var _resume = _interopRequireDefault(require("../../../Assets/Images/Social/resume.svg"));
-
-var _mail = _interopRequireDefault(require("../../../Assets/Images/Social/mail.svg"));
-
-var _insta = _interopRequireDefault(require("../../../Assets/Images/Social/insta.svg"));
-
-var _linkedin = _interopRequireDefault(require("../../../Assets/Images/Social/linkedin.svg"));
 
 var _Patel_Resume = _interopRequireDefault(require("../../../Assets/Images/Social/Patel_Resume.pdf"));
 
@@ -35658,7 +35642,157 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height:60vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 60vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+
+var ContactTitle = _styledComponents.default.div.attrs({
+  style: function style(_ref) {
+    var scrollPercent = _ref.scrollPercent;
+    return {
+      transform: "translateX(-".concat(scrollPercent * 7, "%)")
+    };
+  }
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:12%;\n  right:-40%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
+
+var SocialMediaIcons = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid black; */\n  margin-left: 10%;\n  margin-right: 10%;\n  z-index: 1;\n  transform: translateY(210%);\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-around;\n"])));
+
+var Resume = /*#__PURE__*/function (_Component) {
+  _inherits(Resume, _Component);
+
+  var _super = _createSuper(Resume);
+
+  function Resume(props) {
+    var _this;
+
+    _classCallCheck(this, Resume);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      screenHeight: 0,
+      scrollHeight: 0,
+      scrollPercent: 0
+    };
+    _this.handleScroll = _this.handleScroll.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Resume, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener('scroll', this.handleScroll);
+      this.setState({
+        scrollHeight: Math.round(window.document.documentElement.scrollHeight)
+      });
+      this.setState({
+        screenHeight: Math.round(window.document.documentElement.clientHeight)
+      });
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  }, {
+    key: "handleScroll",
+    value: function handleScroll(event) {
+      var _event$srcElement = event.srcElement,
+          body = _event$srcElement.body,
+          documentElement = _event$srcElement.documentElement;
+      var sd = Math.max(body.scrollTop, documentElement.scrollTop);
+      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100;
+      var minlimit = documentElement.clientHeight * 800 / documentElement.scrollHeight;
+      var maxlimit = documentElement.clientHeight * 1250 / documentElement.scrollHeight;
+
+      if (sp >= minlimit && sp <= maxlimit + 3) {
+        sp -= minlimit;
+        this.setState({
+          scrollPercent: sp
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var scrollPercent = this.state.scrollPercent;
+      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(ContactTitle, {
+        scrollPercent: scrollPercent
+      }, "RESUME"), /*#__PURE__*/_react.default.createElement(SocialMediaIcons, null, /*#__PURE__*/_react.default.createElement(_SocialLogo.default, {
+        imgURL: _resume.default,
+        alternate: "Resume",
+        redirectURL: _Patel_Resume.default
+      })));
+    }
+  }]);
+
+  return Resume;
+}(_react.Component);
+
+var _default = Resume;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/resume.svg":"Assets/Images/Social/resume.svg","../../../Assets/Images/Social/Patel_Resume.pdf":"Assets/Images/Social/Patel_Resume.pdf","./SocialLogo":"Slides/WideScreen/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Assets/Images/Social/git.svg":[function(require,module,exports) {
+module.exports = "/git.1a000b88.svg";
+},{}],"Assets/Images/Social/mail.svg":[function(require,module,exports) {
+module.exports = "/mail.00c836f6.svg";
+},{}],"Assets/Images/Social/insta.svg":[function(require,module,exports) {
+module.exports = "/insta.54ac694c.svg";
+},{}],"Assets/Images/Social/linkedin.svg":[function(require,module,exports) {
+module.exports = "/linkedin.a58775df.svg";
+},{}],"Slides/WideScreen/ContactSlide/Contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _git = _interopRequireDefault(require("../../../Assets/Images/Social/git.svg"));
+
+var _mail = _interopRequireDefault(require("../../../Assets/Images/Social/mail.svg"));
+
+var _insta = _interopRequireDefault(require("../../../Assets/Images/Social/insta.svg"));
+
+var _linkedin = _interopRequireDefault(require("../../../Assets/Images/Social/linkedin.svg"));
+
+var _SocialLogo = _interopRequireDefault(require("./SocialLogo"));
+
+var _breakpoints = _interopRequireDefault(require("../../../Assets/Responsive/breakpoints"));
+
+var _templateObject, _templateObject2, _templateObject3;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height:80vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
 
 var ContactTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
@@ -35746,10 +35880,6 @@ var Contact = /*#__PURE__*/function (_Component) {
         imgURL: _linkedin.default,
         alternate: "Linkedin",
         redirectURL: "https://www.linkedin.com/in/prakrut-patel"
-      }), /*#__PURE__*/_react.default.createElement(_SocialLogo.default, {
-        imgURL: _resume.default,
-        alternate: "Resume",
-        redirectURL: _Patel_Resume.default
       })));
     }
   }]);
@@ -35759,7 +35889,7 @@ var Contact = /*#__PURE__*/function (_Component) {
 
 var _default = Contact;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/resume.svg":"Assets/Images/Social/resume.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","../../../Assets/Images/Social/Patel_Resume.pdf":"Assets/Images/Social/Patel_Resume.pdf","./SocialLogo":"Slides/WideScreen/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/Mobile/HeroSlide/NameAndJobTitle.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","../../../Assets/Images/Social/git.svg":"Assets/Images/Social/git.svg","../../../Assets/Images/Social/mail.svg":"Assets/Images/Social/mail.svg","../../../Assets/Images/Social/insta.svg":"Assets/Images/Social/insta.svg","../../../Assets/Images/Social/linkedin.svg":"Assets/Images/Social/linkedin.svg","./SocialLogo":"Slides/WideScreen/ContactSlide/SocialLogo.js","../../../Assets/Responsive/breakpoints":"Assets/Responsive/breakpoints.js"}],"Slides/Mobile/HeroSlide/NameAndJobTitle.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37620,6 +37750,8 @@ var _Work = _interopRequireDefault(require("./Slides/WideScreen/WorkSlide/Work")
 
 var _Skills = _interopRequireDefault(require("./Slides/WideScreen/Skills"));
 
+var _Resume = _interopRequireDefault(require("./Slides/WideScreen/ContactSlide/Resume"));
+
 var _Contact = _interopRequireDefault(require("./Slides/WideScreen/ContactSlide/Contact"));
 
 var _Hero2 = _interopRequireDefault(require("./Slides/Mobile/HeroSlide/Hero"));
@@ -37690,7 +37822,7 @@ var App = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactResponsive.default, {
         query: "(min-device-width: 1224px)"
-      }, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement(_Work.default, null), /*#__PURE__*/_react.default.createElement(_Skills.default, null), /*#__PURE__*/_react.default.createElement(_Contact.default, null)), /*#__PURE__*/_react.default.createElement(_reactResponsive.default, {
+      }, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement(_Work.default, null), /*#__PURE__*/_react.default.createElement(_Skills.default, null), /*#__PURE__*/_react.default.createElement(_Contact.default, null), /*#__PURE__*/_react.default.createElement(_Resume.default, null)), /*#__PURE__*/_react.default.createElement(_reactResponsive.default, {
         query: "(max-device-width: 1224px)"
       }, /*#__PURE__*/_react.default.createElement(_Hero2.default, null), /*#__PURE__*/_react.default.createElement(_Work2.default, null), /*#__PURE__*/_react.default.createElement(_Skills2.default, null), /*#__PURE__*/_react.default.createElement(_Contact2.default, null)), /*#__PURE__*/_react.default.createElement(GlobalStyle, null));
     }
@@ -37700,7 +37832,7 @@ var App = /*#__PURE__*/function (_Component) {
 }(_react.Component);
 
 (0, _reactDom.render)(_react.default.createElement(App), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-responsive":"../node_modules/react-responsive/dist/react-responsive.js","./Slides/WideScreen/HeroSlide/Hero":"Slides/WideScreen/HeroSlide/Hero.js","./Slides/WideScreen/WorkSlide/Work":"Slides/WideScreen/WorkSlide/Work.js","./Slides/WideScreen/Skills":"Slides/WideScreen/Skills.js","./Slides/WideScreen/ContactSlide/Contact":"Slides/WideScreen/ContactSlide/Contact.js","./Slides/Mobile/HeroSlide/Hero":"Slides/Mobile/HeroSlide/Hero.js","./Slides/Mobile/WorkSlide/Work":"Slides/Mobile/WorkSlide/Work.js","./Slides/Mobile/Skills":"Slides/Mobile/Skills.js","./Slides/Mobile/ContactSlide/Contact":"Slides/Mobile/ContactSlide/Contact.js","./Assets/index.css":"Assets/index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","react-responsive":"../node_modules/react-responsive/dist/react-responsive.js","./Slides/WideScreen/HeroSlide/Hero":"Slides/WideScreen/HeroSlide/Hero.js","./Slides/WideScreen/WorkSlide/Work":"Slides/WideScreen/WorkSlide/Work.js","./Slides/WideScreen/Skills":"Slides/WideScreen/Skills.js","./Slides/WideScreen/ContactSlide/Resume":"Slides/WideScreen/ContactSlide/Resume.js","./Slides/WideScreen/ContactSlide/Contact":"Slides/WideScreen/ContactSlide/Contact.js","./Slides/Mobile/HeroSlide/Hero":"Slides/Mobile/HeroSlide/Hero.js","./Slides/Mobile/WorkSlide/Work":"Slides/Mobile/WorkSlide/Work.js","./Slides/Mobile/Skills":"Slides/Mobile/Skills.js","./Slides/Mobile/ContactSlide/Contact":"Slides/Mobile/ContactSlide/Contact.js","./Assets/index.css":"Assets/index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -37728,7 +37860,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55493" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62311" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
