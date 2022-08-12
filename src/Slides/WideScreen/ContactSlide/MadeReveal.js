@@ -104,13 +104,13 @@ class MadeReveal extends Component {
   }
 }
 
-NameReveal.propTypes = {
+MadeReveal.propTypes = {
   text: PropTypes.string.isRequired,
   fontFam: PropTypes.string,
   timeDelay: PropTypes.number.isRequired,
 };
 
-NameReveal.defaultProps = {
+MadeReveal.defaultProps = {
   fontFam: 'Avenir Helvetica Ariel',
 };
 export default MadeReveal;
