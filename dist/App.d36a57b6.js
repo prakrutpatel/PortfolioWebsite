@@ -35714,12 +35714,12 @@ var MadeReveal = /*#__PURE__*/function (_Component) {
   return MadeReveal;
 }(_react.Component);
 
-NameReveal.propTypes = {
+MadeReveal.propTypes = {
   text: _propTypes.default.string.isRequired,
   fontFam: _propTypes.default.string,
   timeDelay: _propTypes.default.number.isRequired
 };
-NameReveal.defaultProps = {
+MadeReveal.defaultProps = {
   fontFam: 'Avenir Helvetica Ariel'
 };
 var _default = MadeReveal;
@@ -38000,7 +38000,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63183" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60268" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
