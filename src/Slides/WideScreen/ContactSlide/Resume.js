@@ -4,10 +4,11 @@ import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import Pdf from '../../../Assets/Images/Social/Patel_Resume.pdf';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
+import MadeReveal from './MadeReveal';
 
 
 const Container = styled.div`
-    height: 60vh;/* Since pageSplitTime is 1.4 */
+    height: 70vh;/* Since pageSplitTime is 1.4 */
     width:100%;
     /* border: 1px solid blue; */
     position: relative;
@@ -93,6 +94,7 @@ class Resume extends Component {
         <SocialMediaIcons>
           <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
+        <MadeReveal text="Prakrut Patel" fontFam="Valencia" timeDelay={500} />
       </Container>
     );
   }
