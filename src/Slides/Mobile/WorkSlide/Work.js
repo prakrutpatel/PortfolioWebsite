@@ -53,8 +53,8 @@ class Work extends Component {
       {
         number: '04',
         projectName: 'Tesla app',
-        projectDesc: 'iOS app concept to control Tesla cars remotely.',
-        projectType: 'iOS APP CONCEPT',
+        projectDesc: 'ANDROID & iOS app concept to control Tesla cars remotely.',
+        projectType: 'ANDROID & iOS APP CONCEPT',
         roles: ['Full stack Developer', 'UI Designer'],
       },
       {
