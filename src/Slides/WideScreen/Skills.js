@@ -104,7 +104,7 @@ class Skills extends Component {
             <br />
             Python
             <br />
-            Java & Javascript
+            Java
             <br />
             Flutter & Dart
             <br />
@@ -117,9 +117,9 @@ class Skills extends Component {
             UI Maintenance
             <br />
             <br />
-            React
+            React JS
             <br />
-            React Native
+            Javascript
             <br />
             Node JS
             <br />
