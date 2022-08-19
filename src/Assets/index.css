@@ -27,3 +27,8 @@ src: url('./Fonts/Avenir/Avenir-Heavy-05.ttf');
 font-family: 'Valencia';
 src: url('./Fonts/Valencia/Valencia.ttf');
 }
+
+@font-face {
+    font-family: 'Playball';
+    src: url('./Fonts/Playball/Playball-Regular.ttf');
+    }

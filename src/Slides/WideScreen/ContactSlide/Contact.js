@@ -8,7 +8,7 @@ import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
 const Container = styled.section`
-    height:80vh;/* Since pageSplitTime is 1.4 */
+    height:70vh;/* Since pageSplitTime is 1.4 */
     width:100%;
     /* border: 1px solid blue; */
     position: relative;
@@ -73,9 +73,10 @@ class Contact extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 760) / documentElement.scrollHeight;
-    if (sp >= minlimit && sp <= 100) {
+    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 125);
+    const minlimit = (documentElement.clientHeight * 900) / documentElement.scrollHeight;
+    const maxlimit = (documentElement.clientHeight * 1250) / documentElement.scrollHeight;
+    if (sp >= minlimit  && sp <= maxlimit + 3) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
     }

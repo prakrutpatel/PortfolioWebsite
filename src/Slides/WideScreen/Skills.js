@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import device from '../../Assets/Responsive/breakpoints';
 
 const Container = styled.div`
-    height: 100vh;/* Since pageSplitTime is 1.4 */
+    height: 90vh;/* Since pageSplitTime is 1.4 */
     width:100%;
     /* border: 1px solid blue; */
     position: relative;
@@ -19,7 +19,7 @@ const SkillsTitle = styled.div.attrs({
   font-family: 'AvenirHeavy';
   position: absolute;
   color: #EEE;
-  top:20%;
+  top:30%;
   right:-50%;
   @media ${device.laptop} {
     font-size: 180px;
@@ -28,7 +28,7 @@ const SkillsTitle = styled.div.attrs({
     font-size: 200px;
   }
   @media ${device.desktop} {
-    font-size: 350px;
+    font-size: 300px;
   }
 `;
 
@@ -79,9 +79,9 @@ class Skills extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 650) / documentElement.scrollHeight;
-    const maxlimit = (documentElement.clientHeight * 950) / documentElement.scrollHeight;
+    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 120);
+    const minlimit = (documentElement.clientHeight * 750) / documentElement.scrollHeight;
+    const maxlimit = (documentElement.clientHeight * 1150) / documentElement.scrollHeight;
     if (sp >= minlimit && sp <= maxlimit + 3) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
@@ -95,7 +95,7 @@ class Skills extends Component {
         <SkillsTitle scrollPercent={scrollPercent}>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
-            Design system
+            Cloud Computing
             <br />
             Machine Learning
             <br />
@@ -108,23 +108,24 @@ class Skills extends Component {
             <br />
             Flutter & Dart
             <br />
+            Shell Scripting
+            <br />
           </div>
           <div>
             Responsive & Adaptive Design
             <br />
-            Styling Architecture
+            Prototyping
             <br />
             UI Maintenance
             <br />
             <br />
-            React JS
+            ReactJS
             <br />
             Javascript
             <br />
-            Node JS
+            NodeJS
             <br />
           </div>
-          
         </SkillsList>
       </Container>
     );

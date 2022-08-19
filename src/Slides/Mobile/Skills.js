@@ -80,7 +80,7 @@ class Skills extends Component {
         <SkillsTitle>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
-            Design system
+            Cloud Computing
             <br />
             Machine Learning
             <br />
@@ -93,19 +93,21 @@ class Skills extends Component {
             <br />
             Flutter & Dart
             <br />
+            Shell Scripting
+            <br />
             <br />
             Responsive & Adaptive Design
             <br />
-            Styling Architecture
+            Prototyping
             <br />
             UI Maintenance
             <br />
             <br />
-            React JS
+            ReactJS
             <br />
             Javascript
             <br />
-            Node JS
+            NodeJS
             <br />
           </div>
         </SkillsList>
