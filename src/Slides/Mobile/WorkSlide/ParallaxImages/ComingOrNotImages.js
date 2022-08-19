@@ -38,7 +38,8 @@ const Computer = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom: -90vh;
-transform-origin: center;
+transform-origin: left center;
+left: 2vh;
 /* border: 1px dashed red; */
 height: 50vh; 
 `;

@@ -46,7 +46,7 @@ class Work extends Component {
       {
         number: '03',
         projectName: 'MakerSpace',
-        projectDesc: 'Responsive user facing web application for creating modular line drawings for CNC and laser cutters',
+        projectDesc: 'Responsive user facing web application for creating modular line drawings for CNC and laser cutters.',
         projectType: 'WEB APP',
         roles: ['Front-end Developer', 'UI Designer'],
       },
