@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import githubImg from '../../../Assets/Images/Social/git.svg';
 import mailImg from '../../../Assets/Images/Social/mail.svg';
 import instaImg from '../../../Assets/Images/Social/insta.svg';
 import linkedInImg from '../../../Assets/Images/Social/linkedin.svg';
-import Pdf from '../../../Assets/Images/Social/Patel_Resume.pdf';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
 const Container = styled.section`
-    height: 100vh;
+    height: 60vh;
     width:100%;
     /* border: 1px solid blue; */
     display: flex;
@@ -60,7 +58,7 @@ const SocialMediaIcons = styled.div`
   /* border: 1px solid black; */
   z-index: 1;
   display: grid;
-  grid-template: 80px 80px 80px / 1fr 1fr;
+  grid-template: 80px 80px / 1fr 1fr;
   @media ${device.mobileS} {
     margin-top: 60px;
     grid-gap: 40px;
@@ -93,7 +91,6 @@ class Contact extends Component {
           <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:p.prakrut@gmail.com" />
           <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/theprakrut" />
           <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/prakrut-patel" />
-          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
       </Container>
     );

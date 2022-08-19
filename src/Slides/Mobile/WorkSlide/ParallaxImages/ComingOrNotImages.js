@@ -6,41 +6,39 @@ import cmgOrNotTVImg from '../../../../Assets/Images/ComingOrNot/TV.png';
 import cmgOrNotComputerImg from '../../../../Assets/Images/ComingOrNot/Computer.png';
 const TV = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(0.9)`,
+    transform: `translate(0px,-${(scroll) * 18}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -130vh;
-transform-origin: left center;
-left:-5vw;
+bottom: -100vh;
+transform-origin: center;
 /* border: 1px dashed red; */
 height:50vh; 
 `;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 3}%) scale(0.3)`,
+    transform: `translate(0px,-${(scroll) * 5}%) scale(0.5)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -90vh;
-transform-origin: right center;
-right:20vw;
+bottom: -80vh;
+transform-origin: left center;
+left: 15vw
 /* border: 1px dashed red; */
 height: 50vh; 
 `;
 const Computer = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 12}%) scale(0.85)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -105vh;
-transform-origin: left center;
-left:5vw;
+bottom: -90vh;
+transform-origin: center;
 /* border: 1px dashed red; */
 height: 50vh; 
 `;

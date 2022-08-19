@@ -11,7 +11,30 @@ import MobileHero from './Slides/Mobile/HeroSlide/Hero';
 import MobileWork from './Slides/Mobile/WorkSlide/Work';
 import MobileSkills from './Slides/Mobile/Skills';
 import MobileContact from './Slides/Mobile/ContactSlide/Contact';
+import MobileResume from './Slides/Mobile/ContactSlide/Resume';
+import MadeReveal from './Slides/Mobile/ContactSlide/MadeReveal';
 import './Assets/index.css';
+
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getPerformance } from "firebase/performance";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA4InMw2eUAoERy-FUaH0fdPla5xiu3wsI",
+  authDomain: "portfolio-b7e7c.firebaseapp.com",
+  databaseURL: "https://portfolio-b7e7c-default-rtdb.firebaseio.com",
+  projectId: "portfolio-b7e7c",
+  storageBucket: "portfolio-b7e7c.appspot.com",
+  messagingSenderId: "10608367928",
+  appId: "1:10608367928:web:64af35a9fb24844bc7c9cd",
+  measurementId: "G-S88GRLH9CL"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const perf = getPerformance(app);
 
 const GlobalStyle = createGlobalStyle`
 html, body { margin: 0;}
@@ -43,6 +66,8 @@ class App extends Component {
           <MobileWork />
           <MobileSkills />
           <MobileContact />
+          <MobileResume />
+          <MadeReveal />
         </MediaQuery>
         <GlobalStyle />
       </React.Fragment>
