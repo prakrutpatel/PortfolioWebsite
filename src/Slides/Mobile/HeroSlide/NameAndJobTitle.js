@@ -14,23 +14,23 @@ const Container = styled.section`
 `;
 
 const Name = styled.div`
-  font-family: 'Valencia';
+  font-family: 'Playball';
   text-align:center;
   padding-right: 10px;
   @media ${device.mobileS} {
-    font-size: 70px;
+    font-size: 60px;
   }
   @media ${device.mobileM} {
-    font-size: 80px;
+    font-size: 70px;
   }
   @media ${device.mobileL} {
-    font-size: 90px;
+    font-size: 80px;
   }
   @media ${device.tablet} {
-    font-size: 150px;
+    font-size: 140px;
   }
   @media ${device.laptop} {
-    font-size: 160px;
+    font-size: 150px;
   }
 `;
 

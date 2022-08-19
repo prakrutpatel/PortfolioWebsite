@@ -34055,7 +34055,7 @@ var NameAndJobTitle = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(_NameReveal.default, {
         text: "Prakrut Patel",
-        fontFam: "Valencia",
+        fontFam: "Playball",
         timeDelay: 500
       }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_TitleReveal.default, {
         text: "Software Engineer",
@@ -34164,7 +34164,7 @@ var AboutMe = /*#__PURE__*/function (_Component) {
           body = _event$srcElement.body,
           documentElement = _event$srcElement.documentElement;
       var sd = Math.max(body.scrollTop, documentElement.scrollTop);
-      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100;
+      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 150;
       var maxlimit = documentElement.clientHeight * 150 / documentElement.scrollHeight;
 
       if (sp >= 0 && sp <= maxlimit) {
@@ -34786,25 +34786,25 @@ var TV = _styledComponents.default.img.attrs({
       transform: "translate(0px,-".concat(scroll * 12, "%)")
     };
   }
-})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-85vh;\nleft: -5vw;\n/* border: 1px dashed red; */\nheight: 100vh;\n"])));
+})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-85vh;\n/* border: 1px dashed red; */\nheight: 100vh;\n"])));
 
 var Tablet = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 8, "%) scale(0.55)")
+      transform: "translate(0px,-".concat(scroll * 9, "%) scale(0.60)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -70vh;\nright:-10vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -80vh;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
 var Computer = _styledComponents.default.img.attrs({
   style: function style(_ref3) {
     var scroll = _ref3.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 2, "%)")
+      transform: "translate(0px,-".concat(scroll * 3, "%)")
     };
   }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -50vh;\nleft:-5vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -65vh;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
 var ComingOrNotImages = /*#__PURE__*/function (_Component) {
   _inherits(ComingOrNotImages, _Component);
@@ -35272,9 +35272,9 @@ var Work = /*#__PURE__*/function (_Component) {
     }, {
       number: '04',
       projectName: 'Tesla app',
-      projectDesc: 'iOS app concept to control Tesla cars remotely.',
-      projectType: 'iOS APP CONCEPT',
-      roles: ['UI Designer']
+      projectDesc: 'Android & iOS app concept to control Tesla cars remotely.',
+      projectType: 'ANDROID & iOS APP CONCEPT',
+      roles: [' Full stack Developer', 'UI Designer']
     }, {
       number: '',
       projectName: '',
@@ -35401,7 +35401,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 100vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 90vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
 
 var SkillsTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
@@ -35410,7 +35410,7 @@ var SkillsTitle = _styledComponents.default.div.attrs({
       transform: "translateX(-".concat(scrollPercent * 10, "%)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:20%;\n  right:-50%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:30%;\n  right:-50%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 300px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
 var SkillsList = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid #EFEFEF; */\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  font-family: 'AvenirRoman';\n  text-align: left;\n  margin-left: 15%;\n  margin-right: 10%;\n  z-index: 1;\n  transform: translateY(30%);\n  @media ", " {\n    font-size: 35px;\n  }\n  @media ", " {\n    font-size: 40px;\n  }\n  @media ", " {\n    font-size: 70px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
@@ -35457,9 +35457,9 @@ var Skills = /*#__PURE__*/function (_Component) {
           body = _event$srcElement.body,
           documentElement = _event$srcElement.documentElement;
       var sd = Math.max(body.scrollTop, documentElement.scrollTop);
-      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100;
-      var minlimit = documentElement.clientHeight * 650 / documentElement.scrollHeight;
-      var maxlimit = documentElement.clientHeight * 950 / documentElement.scrollHeight;
+      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 120;
+      var minlimit = documentElement.clientHeight * 750 / documentElement.scrollHeight;
+      var maxlimit = documentElement.clientHeight * 1150 / documentElement.scrollHeight;
 
       if (sp >= minlimit && sp <= maxlimit + 3) {
         sp -= minlimit;
@@ -35474,7 +35474,7 @@ var Skills = /*#__PURE__*/function (_Component) {
       var scrollPercent = this.state.scrollPercent;
       return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(SkillsTitle, {
         scrollPercent: scrollPercent
-      }, "SKILLS"), /*#__PURE__*/_react.default.createElement(SkillsList, null, /*#__PURE__*/_react.default.createElement("div", null, "Design system", /*#__PURE__*/_react.default.createElement("br", null), "Machine Learning", /*#__PURE__*/_react.default.createElement("br", null), "IoT Development", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Python", /*#__PURE__*/_react.default.createElement("br", null), "Java & Javascript", /*#__PURE__*/_react.default.createElement("br", null), "Flutter & Dart", /*#__PURE__*/_react.default.createElement("br", null)), /*#__PURE__*/_react.default.createElement("div", null, "Responsive & Adaptive Design", /*#__PURE__*/_react.default.createElement("br", null), "Styling Architecture", /*#__PURE__*/_react.default.createElement("br", null), "UI Maintenance", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "React", /*#__PURE__*/_react.default.createElement("br", null), "React Native", /*#__PURE__*/_react.default.createElement("br", null), "Node JS", /*#__PURE__*/_react.default.createElement("br", null))));
+      }, "SKILLS"), /*#__PURE__*/_react.default.createElement(SkillsList, null, /*#__PURE__*/_react.default.createElement("div", null, "Cloud Computing", /*#__PURE__*/_react.default.createElement("br", null), "Machine Learning", /*#__PURE__*/_react.default.createElement("br", null), "IoT Development", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Python", /*#__PURE__*/_react.default.createElement("br", null), "Java", /*#__PURE__*/_react.default.createElement("br", null), "Flutter & Dart", /*#__PURE__*/_react.default.createElement("br", null), "Shell Scripting", /*#__PURE__*/_react.default.createElement("br", null)), /*#__PURE__*/_react.default.createElement("div", null, "Responsive & Adaptive Design", /*#__PURE__*/_react.default.createElement("br", null), "Prototyping", /*#__PURE__*/_react.default.createElement("br", null), "UI Maintenance", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "ReactJS", /*#__PURE__*/_react.default.createElement("br", null), "Javascript", /*#__PURE__*/_react.default.createElement("br", null), "NodeJS", /*#__PURE__*/_react.default.createElement("br", null))));
     }
   }]);
 
@@ -35610,7 +35610,7 @@ var _SocialLogo = _interopRequireDefault(require("./SocialLogo"));
 
 var _breakpoints = _interopRequireDefault(require("../../../Assets/Responsive/breakpoints"));
 
-var _templateObject, _templateObject2, _templateObject3;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35642,7 +35642,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 70vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+var Container = _styledComponents.default.div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height: 50vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
 
 var ContactTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
@@ -35651,9 +35651,11 @@ var ContactTitle = _styledComponents.default.div.attrs({
       transform: "translateX(-".concat(scrollPercent * 7, "%)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:12%;\n  right:-40%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  transition: transform 0.2s ease-out;\n  font-family: 'AvenirHeavy';\n  position: absolute;\n  color: #EEE;\n  top:12%;\n  right:-50%;\n  @media ", " {\n    font-size: 180px;\n  }\n  @media ", " {\n    font-size: 200px;\n  }\n  @media ", " {\n    font-size: 350px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
 var SocialMediaIcons = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  /* border: 1px solid black; */\n  margin-left: 10%;\n  margin-right: 10%;\n  z-index: 1;\n  transform: translateY(210%);\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-around;\n"])));
+
+var Madewith = _styledComponents.default.div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  align-items: center;\n  font-family: 'Playball';\n  text-align: center;\n  @media ", " {\n    transform: translateY(90%);\n    font-size: 30px;\n  }\n  @media ", " {\n    transform: translateY(87%);\n    font-size: 38px;\n  }\n  @media ", " {\n    transform: translateY(80%);\n    font-size: 70px;\n  }\n"])), _breakpoints.default.laptop, _breakpoints.default.laptopL, _breakpoints.default.desktop);
 
 var Resume = /*#__PURE__*/function (_Component) {
   _inherits(Resume, _Component);
@@ -35698,11 +35700,10 @@ var Resume = /*#__PURE__*/function (_Component) {
           body = _event$srcElement.body,
           documentElement = _event$srcElement.documentElement;
       var sd = Math.max(body.scrollTop, documentElement.scrollTop);
-      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100;
-      var minlimit = documentElement.clientHeight * 800 / documentElement.scrollHeight;
-      var maxlimit = documentElement.clientHeight * 1250 / documentElement.scrollHeight;
+      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 110;
+      var minlimit = documentElement.clientHeight * 830 / documentElement.scrollHeight;
 
-      if (sp >= minlimit && sp <= maxlimit + 3) {
+      if (sp >= minlimit) {
         sp -= minlimit;
         this.setState({
           scrollPercent: sp
@@ -35713,13 +35714,13 @@ var Resume = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       var scrollPercent = this.state.scrollPercent;
-      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(ContactTitle, {
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(ContactTitle, {
         scrollPercent: scrollPercent
       }, "RESUME"), /*#__PURE__*/_react.default.createElement(SocialMediaIcons, null, /*#__PURE__*/_react.default.createElement(_SocialLogo.default, {
         imgURL: _resume.default,
         alternate: "Resume",
         redirectURL: _Patel_Resume.default
-      })));
+      }))), /*#__PURE__*/_react.default.createElement(Madewith, null, "Made with ReactJS"));
     }
   }]);
 
@@ -35792,7 +35793,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height:80vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
+var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    height:70vh;/* Since pageSplitTime is 1.4 */\n    width:100%;\n    /* border: 1px solid blue; */\n    position: relative;\n    overflow: hidden;\n"])));
 
 var ContactTitle = _styledComponents.default.div.attrs({
   style: function style(_ref) {
@@ -35848,10 +35849,11 @@ var Contact = /*#__PURE__*/function (_Component) {
           body = _event$srcElement.body,
           documentElement = _event$srcElement.documentElement;
       var sd = Math.max(body.scrollTop, documentElement.scrollTop);
-      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100;
-      var minlimit = documentElement.clientHeight * 760 / documentElement.scrollHeight;
+      var sp = sd / (documentElement.scrollHeight - documentElement.clientHeight) * 125;
+      var minlimit = documentElement.clientHeight * 900 / documentElement.scrollHeight;
+      var maxlimit = documentElement.clientHeight * 1250 / documentElement.scrollHeight;
 
-      if (sp >= minlimit && sp <= 100) {
+      if (sp >= minlimit && sp <= maxlimit + 3) {
         sp -= minlimit;
         this.setState({
           scrollPercent: sp
@@ -35937,7 +35939,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Container = _styledComponents.default.section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-flow: column nowrap;\n    justify-content: center;\n    align-items: center;\n    height:50vh;\n    width:100%;\n    background-color: white;\n    /* border: 1px solid blue; */\n"])));
 
-var Name = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-family: 'Valencia';\n  text-align:center;\n  padding-right: 10px;\n  @media ", " {\n    font-size: 70px;\n  }\n  @media ", " {\n    font-size: 80px;\n  }\n  @media ", " {\n    font-size: 90px;\n  }\n  @media ", " {\n    font-size: 150px;\n  }\n  @media ", " {\n    font-size: 160px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
+var Name = _styledComponents.default.div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-family: 'Playball';\n  text-align:center;\n  padding-right: 10px;\n  @media ", " {\n    font-size: 60px;\n  }\n  @media ", " {\n    font-size: 70px;\n  }\n  @media ", " {\n    font-size: 80px;\n  }\n  @media ", " {\n    font-size: 140px;\n  }\n  @media ", " {\n    font-size: 150px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
 var Title = _styledComponents.default.div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: 'AvenirRoman';\n  text-align:center;\n  margin-top: 10px;\n  @media ", " {\n    font-size: 13px;\n  }\n  @media ", " {\n    font-size: 15px;\n  }\n  @media ", " {\n    font-size: 17px;\n  }\n  @media ", " {\n    font-size: 30px;\n  }\n  @media ", " {\n    font-size: 35px;\n  }\n"])), _breakpoints.default.mobileS, _breakpoints.default.mobileM, _breakpoints.default.mobileL, _breakpoints.default.tablet, _breakpoints.default.laptop);
 
@@ -37308,9 +37310,9 @@ var Work = /*#__PURE__*/function (_Component) {
     }, {
       number: '04',
       projectName: 'Tesla app',
-      projectDesc: 'iOS app concept to control Tesla cars remotely.',
-      projectType: 'iOS APP CONCEPT',
-      roles: ['UI Designer']
+      projectDesc: 'Android & iOS app concept to control Tesla cars remotely.',
+      projectType: 'ANDROID & iOS APP CONCEPT',
+      roles: ['Full stack Developer', 'UI Designer']
     }, {
       number: '',
       projectName: '',
@@ -37458,7 +37460,7 @@ var Skills = /*#__PURE__*/function (_Component) {
   _createClass(Skills, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(SkillsTitle, null, "SKILLS"), /*#__PURE__*/_react.default.createElement(SkillsList, null, /*#__PURE__*/_react.default.createElement("div", null, "Design system", /*#__PURE__*/_react.default.createElement("br", null), "Machine Learning", /*#__PURE__*/_react.default.createElement("br", null), "IoT Development", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Python", /*#__PURE__*/_react.default.createElement("br", null), "Java & Javascript", /*#__PURE__*/_react.default.createElement("br", null), "Flutter & Dart", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Responsive & Adaptive Design", /*#__PURE__*/_react.default.createElement("br", null), "Styling Architecture", /*#__PURE__*/_react.default.createElement("br", null), "UI Maintenance", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "React", /*#__PURE__*/_react.default.createElement("br", null), "React Native", /*#__PURE__*/_react.default.createElement("br", null), "Node JS", /*#__PURE__*/_react.default.createElement("br", null))));
+      return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(SkillsTitle, null, "SKILLS"), /*#__PURE__*/_react.default.createElement(SkillsList, null, /*#__PURE__*/_react.default.createElement("div", null, "Cloud Computing", /*#__PURE__*/_react.default.createElement("br", null), "Machine Learning", /*#__PURE__*/_react.default.createElement("br", null), "IoT Development", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Python", /*#__PURE__*/_react.default.createElement("br", null), "Java", /*#__PURE__*/_react.default.createElement("br", null), "Flutter & Dart", /*#__PURE__*/_react.default.createElement("br", null), "Shell Scripting", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "Responsive & Adaptive Design", /*#__PURE__*/_react.default.createElement("br", null), "Prototyping", /*#__PURE__*/_react.default.createElement("br", null), "UI Maintenance", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), "ReactJS", /*#__PURE__*/_react.default.createElement("br", null), "Javascript", /*#__PURE__*/_react.default.createElement("br", null), "NodeJS", /*#__PURE__*/_react.default.createElement("br", null))));
     }
   }]);
 
@@ -37733,7 +37735,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./Fonts\\Avenir\\Avenir-Light-07.ttf":[["Avenir-Light-07.0f87d3ed.ttf","Assets/Fonts/Avenir/Avenir-Light-07.ttf"],"Assets/Fonts/Avenir/Avenir-Light-07.ttf"],"./Fonts\\Avenir\\Avenir-Roman-12.ttf":[["Avenir-Roman-12.5e177e9c.ttf","Assets/Fonts/Avenir/Avenir-Roman-12.ttf"],"Assets/Fonts/Avenir/Avenir-Roman-12.ttf"],"./Fonts\\Avenir\\Avenir-Book-01.ttf":[["Avenir-Book-01.d88b5c28.ttf","Assets/Fonts/Avenir/Avenir-Book-01.ttf"],"Assets/Fonts/Avenir/Avenir-Book-01.ttf"],"./Fonts\\Avenir\\Avenir-Medium-09.ttf":[["Avenir-Medium-09.2c564d4e.ttf","Assets/Fonts/Avenir/Avenir-Medium-09.ttf"],"Assets/Fonts/Avenir/Avenir-Medium-09.ttf"],"./Fonts\\Avenir\\Avenir-Heavy-05.ttf":[["Avenir-Heavy-05.cab84c3f.ttf","Assets/Fonts/Avenir/Avenir-Heavy-05.ttf"],"Assets/Fonts/Avenir/Avenir-Heavy-05.ttf"],"./Fonts\\Valencia\\Valencia.ttf":[["Valencia.a0ebc654.ttf","Assets/Fonts/Valencia/Valencia.ttf"],"Assets/Fonts/Valencia/Valencia.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
+},{"./Fonts\\Avenir\\Avenir-Light-07.ttf":[["Avenir-Light-07.0f87d3ed.ttf","Assets/Fonts/Avenir/Avenir-Light-07.ttf"],"Assets/Fonts/Avenir/Avenir-Light-07.ttf"],"./Fonts\\Avenir\\Avenir-Roman-12.ttf":[["Avenir-Roman-12.5e177e9c.ttf","Assets/Fonts/Avenir/Avenir-Roman-12.ttf"],"Assets/Fonts/Avenir/Avenir-Roman-12.ttf"],"./Fonts\\Avenir\\Avenir-Book-01.ttf":[["Avenir-Book-01.d88b5c28.ttf","Assets/Fonts/Avenir/Avenir-Book-01.ttf"],"Assets/Fonts/Avenir/Avenir-Book-01.ttf"],"./Fonts\\Avenir\\Avenir-Medium-09.ttf":[["Avenir-Medium-09.2c564d4e.ttf","Assets/Fonts/Avenir/Avenir-Medium-09.ttf"],"Assets/Fonts/Avenir/Avenir-Medium-09.ttf"],"./Fonts\\Avenir\\Avenir-Heavy-05.ttf":[["Avenir-Heavy-05.cab84c3f.ttf","Assets/Fonts/Avenir/Avenir-Heavy-05.ttf"],"Assets/Fonts/Avenir/Avenir-Heavy-05.ttf"],"./Fonts\\Valencia\\Valencia.ttf":[["Valencia.a0ebc654.ttf","Assets/Fonts/Valencia/Valencia.ttf"],"Assets/Fonts/Valencia/Valencia.ttf"],"./Fonts\\Playball\\Playball-Regular.ttf":[["Playball-Regular.01647a8e.ttf","Assets/Fonts/Playball/Playball-Regular.ttf"],"Assets/Fonts/Playball/Playball-Regular.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireWildcard(require("react"));
@@ -37860,7 +37862,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60573" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52083" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

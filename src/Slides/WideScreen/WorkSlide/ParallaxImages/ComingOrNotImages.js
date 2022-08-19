@@ -13,32 +13,29 @@ const TV = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom:-85vh;
-left: -5vw;
 /* border: 1px dashed red; */
 height: 100vh;
 `;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8}%) scale(0.55)`,
+    transform: `translate(0px,-${(scroll) * 9}%) scale(0.60)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -70vh;
-right:-10vw;
+bottom: -80vh;
 /* border: 1px dashed red; */
 height: 80vh; 
 `;
 const Computer = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%)`,
+    transform: `translate(0px,-${(scroll) * 3}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -50vh;
-left:-5vw;
+bottom: -65vh;
 /* border: 1px dashed red; */
 height: 80vh; 
 `;

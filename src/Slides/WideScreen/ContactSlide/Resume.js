@@ -7,7 +7,7 @@ import device from '../../../Assets/Responsive/breakpoints';
 
 
 const Container = styled.div`
-    height: 70vh;/* Since pageSplitTime is 1.4 */
+    height: 50vh;/* Since pageSplitTime is 1.4 */
     width:100%;
     /* border: 1px solid blue; */
     position: relative;
@@ -25,7 +25,7 @@ const ContactTitle = styled.div.attrs({
   position: absolute;
   color: #EEE;
   top:12%;
-  right:-40%;
+  right:-50%;
   @media ${device.laptop} {
     font-size: 180px;
   }
@@ -46,6 +46,24 @@ const SocialMediaIcons = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+`;
+
+const Madewith = styled.div`
+  align-items: center;
+  font-family: 'Playball';
+  text-align: center;
+  @media ${device.laptop} {
+    transform: translateY(90%);
+    font-size: 30px;
+  }
+  @media ${device.laptopL} {
+    transform: translateY(87%);
+    font-size: 38px;
+  }
+  @media ${device.desktop} {
+    transform: translateY(80%);
+    font-size: 70px;
+  }
 `;
 
 
@@ -76,10 +94,9 @@ class Resume extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 800) / documentElement.scrollHeight;
-    const maxlimit = (documentElement.clientHeight * 1250) / documentElement.scrollHeight;
-    if (sp >= minlimit && sp <= maxlimit + 3) {
+    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 110);
+    const minlimit = (documentElement.clientHeight * 830) / documentElement.scrollHeight;
+    if (sp >= minlimit) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
     }
@@ -88,12 +105,15 @@ class Resume extends Component {
   render() {
     const { scrollPercent } = this.state;
     return (
+      <>
       <Container>
         <ContactTitle scrollPercent={scrollPercent}>RESUME</ContactTitle>
         <SocialMediaIcons>
           <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
       </Container>
+      <Madewith>Made with ReactJS</Madewith>
+      </>
     );
   }
 }
