@@ -34,7 +34,7 @@ class Work extends Component {
         projectName: 'Gym Rats',
         projectDesc: 'Workout app that allows users to create their own workouts and share them. App was created as a part of my senior capstone project.',
         projectType: 'ANDROID & iOS APP',
-        roles: ['Full Stack Developer', 'UI Designer', 'Product Manager'],
+        roles: ['Full Stack Developer', 'UI Designer'],
       },
       {
         number: '02',
