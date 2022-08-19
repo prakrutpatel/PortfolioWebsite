@@ -15,8 +15,8 @@ const VoistrapPhoneHome = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom: -170vh;
-transform-origin: center;
-left:-18vw;
+transform-origin: left center;
+left: 2vw;
 /* border: 1px dashed red; */
 height: 80vh; 
 `;
@@ -29,8 +29,8 @@ const VoistrapPhoneMeetings = styled.img.attrs({
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom:-125vh;
-right: -18vw;
-transform-origin: center;
+right: 2vw;
+transform-origin: right center;
 /* border: 1px dashed red; */
 height: 80vh;
 `;
@@ -42,8 +42,8 @@ const VoistrapPhoneScore = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 bottom:-110vh;
-left:-18vw;
-transform-origin: center;
+left: 2vw;
+transform-origin: left center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
@@ -56,8 +56,8 @@ const VoistrapPhonePeople = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 bottom:-105vh;
-right: -18vw;
-transform-origin: center;
+right: 2vw;
+transform-origin: right center;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
@@ -72,7 +72,6 @@ class VoistrapImages extends Component {
     const heighttoBeReducedinVH = ((boxHeight * index) - 100);
     const scrollOffset = (screenHeight * heighttoBeReducedinVH) / 100;
     const scrollOffsetInPercent = (scrollOffset * 100 / scrollHeight);
-    console.log('scrollPercent ', scrollPercent);
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
