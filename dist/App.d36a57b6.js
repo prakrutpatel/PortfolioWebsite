@@ -34404,7 +34404,14 @@ var TextContent = /*#__PURE__*/function (_Component) {
       }))), /*#__PURE__*/_react.default.createElement(ProjectDesc, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
         refreshToggle: refreshToggle,
         inline: false
-      }, projectDesc)))), /*#__PURE__*/_react.default.createElement(ProjectType, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
+      }, projectDesc), number == '02' ? /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
+        refreshToggle: refreshToggle,
+        inline: false
+      }, " ", /*#__PURE__*/_react.default.createElement("span", null, "This project is demonstrated ", /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://huggingface.co/spaces/prakrutpatel/ContextRCNN_Gradio",
+        target: "_blank",
+        rel: "noreferrer noopener"
+      }, "here"), "."), " ") : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null)))), /*#__PURE__*/_react.default.createElement(ProjectType, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
         refreshToggle: refreshToggle,
         inline: true
       }, projectType)));
@@ -35261,7 +35268,7 @@ var Work = /*#__PURE__*/function (_Component) {
       number: '02',
       projectName: 'Context RCNN',
       projectDesc: 'Implement usage of Context RCNN and Faster RCNN models to monitor and conserve wildlife. My efforts included training and deploying the models.',
-      projectType: 'ML RESEACH',
+      projectType: 'ML RESEARCH',
       roles: ['Machine Learning Engineer']
     }, {
       number: '03',
@@ -47492,7 +47499,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51432" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60548" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
