@@ -34585,14 +34585,10 @@ VoistrapImages.propTypes = {
 };
 var _default = VoistrapImages;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/Voistrap/Home.png":"Assets/Images/Voistrap/Home.png","../../../../Assets/Images/Voistrap/Meetings.png":"Assets/Images/Voistrap/Meetings.png","../../../../Assets/Images/Voistrap/People.png":"Assets/Images/Voistrap/People.png","../../../../Assets/Images/Voistrap/Score.png":"Assets/Images/Voistrap/Score.png"}],"Assets/Images/WhatsMyFood/Home.png":[function(require,module,exports) {
-module.exports = "/Home.acf0346b.png";
-},{}],"Assets/Images/WhatsMyFood/Restaurant.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/Voistrap/Home.png":"Assets/Images/Voistrap/Home.png","../../../../Assets/Images/Voistrap/Meetings.png":"Assets/Images/Voistrap/Meetings.png","../../../../Assets/Images/Voistrap/People.png":"Assets/Images/Voistrap/People.png","../../../../Assets/Images/Voistrap/Score.png":"Assets/Images/Voistrap/Score.png"}],"Assets/Images/WhatsMyFood/Restaurant.png":[function(require,module,exports) {
 module.exports = "/Restaurant.879d330f.png";
 },{}],"Assets/Images/WhatsMyFood/AddRestaurant.png":[function(require,module,exports) {
 module.exports = "/AddRestaurant.668a5733.png";
-},{}],"Assets/Images/WhatsMyFood/AddFood.png":[function(require,module,exports) {
-module.exports = "/AddFood.0e8a8539.png";
 },{}],"Slides/WideScreen/WorkSlide/ParallaxImages/WhatsMyFoodImages.js":[function(require,module,exports) {
 "use strict";
 
@@ -34607,15 +34603,11 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _Home = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/Home.png"));
-
 var _Restaurant = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/Restaurant.png"));
 
 var _AddRestaurant = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/AddRestaurant.png"));
 
-var _AddFood = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/AddFood.png"));
-
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+var _templateObject, _templateObject2;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34647,45 +34639,23 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-//<AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-//<AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-//<Home src={homeImg} scroll={scrollPercent} alt="Home" />
-//<Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
 var Restaurant = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 15, "%)")
+      transform: "translate(0px,-".concat(scroll * 15, "%) scale(1.15)")
     };
   }
-})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -90vh;\nleft:0vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
+})(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -90vh;\nleft:1vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
-var Home = _styledComponents.default.img.attrs({
+var AddRestaurant = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 8, "%) scale(0.9)")
+      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.75)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-45vh;\nright: 2vw;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.6px);\n"])));
-
-var AddFood = _styledComponents.default.img.attrs({
-  style: function style(_ref3) {
-    var scroll = _ref3.scroll;
-    return {
-      transform: "translate(0px,-".concat(scroll * 5, "%) scale(0.7)")
-    };
-  }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-75vh;\nleft:2vw;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.8px);\n"])));
-
-var AddRestaurant = _styledComponents.default.img.attrs({
-  style: function style(_ref4) {
-    var scroll = _ref4.scroll;
-    return {
-      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.6)")
-    };
-  }
-})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-55vh;\nright: 5vw;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(1.2px);\n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-55vh;\nright: -5vw;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
   _inherits(WhatsMyFoodImages, _Component);
@@ -34712,7 +34682,15 @@ var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
       var scrollOffsetInPercent = scrollOffset * 100 / scrollHeight + index - 1; // console.log('WMF scrollOffsetPercent ', scrollOffsetInPercent);
 
       scrollPercent -= scrollOffsetInPercent;
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null);
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(AddRestaurant, {
+        src: _AddRestaurant.default,
+        scroll: scrollPercent,
+        alt: "addRestaurant"
+      }), /*#__PURE__*/_react.default.createElement(Restaurant, {
+        src: _Restaurant.default,
+        scroll: scrollPercent,
+        alt: "Restaurant"
+      }));
     }
   }]);
 
@@ -34728,7 +34706,7 @@ WhatsMyFoodImages.propTypes = {
 };
 var _default = WhatsMyFoodImages;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/WhatsMyFood/Home.png":"Assets/Images/WhatsMyFood/Home.png","../../../../Assets/Images/WhatsMyFood/Restaurant.png":"Assets/Images/WhatsMyFood/Restaurant.png","../../../../Assets/Images/WhatsMyFood/AddRestaurant.png":"Assets/Images/WhatsMyFood/AddRestaurant.png","../../../../Assets/Images/WhatsMyFood/AddFood.png":"Assets/Images/WhatsMyFood/AddFood.png"}],"Assets/Images/ComingOrNot/Tablet.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/WhatsMyFood/Restaurant.png":"Assets/Images/WhatsMyFood/Restaurant.png","../../../../Assets/Images/WhatsMyFood/AddRestaurant.png":"Assets/Images/WhatsMyFood/AddRestaurant.png"}],"Assets/Images/ComingOrNot/Tablet.png":[function(require,module,exports) {
 module.exports = "/Tablet.3851521b.png";
 },{}],"Assets/Images/ComingOrNot/TV.png":[function(require,module,exports) {
 module.exports = "/TV.5dd1a056.png";
@@ -36646,15 +36624,11 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _Home = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/Home.png"));
-
 var _Restaurant = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/Restaurant.png"));
 
 var _AddRestaurant = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/AddRestaurant.png"));
 
-var _AddFood = _interopRequireDefault(require("../../../../Assets/Images/WhatsMyFood/AddFood.png"));
-
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+var _templateObject, _templateObject2;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36686,45 +36660,23 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-//<AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-//<AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-//<Home src={homeImg} scroll={scrollPercent} alt="Home" />
-//<Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
 var Restaurant = _styledComponents.default.img.attrs({
   style: function style(_ref) {
     var scroll = _ref.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 15, "%) scale(0.7)")
+      transform: "translate(0px,-".concat(scroll * 15, "%) scale(0.55)")
     };
   }
 })(_templateObject || (_templateObject = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom: -170vh;\ntransform-origin: left center;\nleft:2vw;\n/* border: 1px dashed red; */\nheight: 80vh; \n"])));
 
-var Home = _styledComponents.default.img.attrs({
+var AddRestaurant = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 8.5, "%) scale(0.62)")
+      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.4)")
     };
   }
-})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nposition: absolute;\nbottom:-125vh;\nright: 2vw;\ntransform-origin: right center;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.6px);\n"])));
-
-var AddFood = _styledComponents.default.img.attrs({
-  style: function style(_ref3) {
-    var scroll = _ref3.scroll;
-    return {
-      transform: "translate(0px,-".concat(scroll * 3.5, "%) scale(0.5)")
-    };
-  }
-})(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-110vh;\nleft:10vw;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(0.8px);\n"])));
-
-var AddRestaurant = _styledComponents.default.img.attrs({
-  style: function style(_ref4) {
-    var scroll = _ref4.scroll;
-    return {
-      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.45)")
-    };
-  }
-})(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nright: 10vw;\ntransform-origin: right center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\nfilter: blur(1.2px);\n"])));
+})(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nleft: 2.5vh;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
 
 var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
   _inherits(WhatsMyFoodImages, _Component);
@@ -36756,7 +36708,15 @@ var WhatsMyFoodImages = /*#__PURE__*/function (_Component) {
         console.log('WMF');
       }
 
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null);
+      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(AddRestaurant, {
+        src: _AddRestaurant.default,
+        scroll: scrollPercent,
+        alt: "addRestaurant"
+      }), /*#__PURE__*/_react.default.createElement(Restaurant, {
+        src: _Restaurant.default,
+        scroll: scrollPercent,
+        alt: "Restaurant"
+      }));
     }
   }]);
 
@@ -36772,7 +36732,7 @@ WhatsMyFoodImages.propTypes = {
 };
 var _default = WhatsMyFoodImages;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/WhatsMyFood/Home.png":"Assets/Images/WhatsMyFood/Home.png","../../../../Assets/Images/WhatsMyFood/Restaurant.png":"Assets/Images/WhatsMyFood/Restaurant.png","../../../../Assets/Images/WhatsMyFood/AddRestaurant.png":"Assets/Images/WhatsMyFood/AddRestaurant.png","../../../../Assets/Images/WhatsMyFood/AddFood.png":"Assets/Images/WhatsMyFood/AddFood.png"}],"Slides/Mobile/WorkSlide/ParallaxImages/ComingOrNotImages.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","prop-types":"../node_modules/prop-types/index.js","../../../../Assets/Images/WhatsMyFood/Restaurant.png":"Assets/Images/WhatsMyFood/Restaurant.png","../../../../Assets/Images/WhatsMyFood/AddRestaurant.png":"Assets/Images/WhatsMyFood/AddRestaurant.png"}],"Slides/Mobile/WorkSlide/ParallaxImages/ComingOrNotImages.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47499,7 +47459,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60548" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53831" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
