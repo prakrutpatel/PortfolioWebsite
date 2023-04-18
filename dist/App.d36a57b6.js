@@ -36444,7 +36444,14 @@ var TextContent = /*#__PURE__*/function (_Component) {
       }))), /*#__PURE__*/_react.default.createElement(ProjectDesc, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
         refreshToggle: refreshToggle,
         inline: false
-      }, projectDesc)))), /*#__PURE__*/_react.default.createElement(ProjectType, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
+      }, projectDesc), number == '02' ? /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
+        refreshToggle: refreshToggle,
+        inline: false
+      }, " ", /*#__PURE__*/_react.default.createElement("span", null, "This project is demonstrated ", /*#__PURE__*/_react.default.createElement("a", {
+        href: "https://huggingface.co/spaces/prakrutpatel/ContextRCNN_Gradio",
+        target: "_blank",
+        rel: "noreferrer noopener"
+      }, "here"), "."), " ") : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null)))), /*#__PURE__*/_react.default.createElement(ProjectType, null, /*#__PURE__*/_react.default.createElement(BlockTextReveal, {
         refreshToggle: refreshToggle,
         inline: true
       }, projectType)));
@@ -36673,7 +36680,7 @@ var AddRestaurant = _styledComponents.default.img.attrs({
   style: function style(_ref2) {
     var scroll = _ref2.scroll;
     return {
-      transform: "translate(0px,-".concat(scroll * 2, "%) scale(0.4)")
+      transform: "translate(0px,-".concat(scroll * 5, "%) scale(0.4)")
     };
   }
 })(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\ntransition: transform 0.2s ease-out;\nbottom:-105vh;\nleft: 2.5vh;\ntransform-origin: left center;\nposition: absolute;\n/* border: 1px dashed red; */\nheight: 80vh;\n"])));
@@ -47459,7 +47466,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53831" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54301" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
