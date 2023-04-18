@@ -19,7 +19,7 @@ height: 80vh;
 
 const AddRestaurant = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.75)`,
+    transform: `translate(0px,-${(scroll) * 3.5}%) scale(0.75)`,
   }),
 })`
 transition: transform 0.2s ease-out;
