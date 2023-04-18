@@ -215,6 +215,8 @@ class TextContent extends Component {
               <BlockTextReveal refreshToggle={refreshToggle} inline={false}>
                 {projectDesc}
               </BlockTextReveal>
+              {number =='02' ? <BlockTextReveal refreshToggle={refreshToggle} inline={false}> {<span>This project is demonstrated <a href="https://huggingface.co/spaces/prakrutpatel/ContextRCNN_Gradio" target="_blank" rel="noreferrer noopener">here</a>.</span>} </BlockTextReveal>
+              :<></>}
             </ProjectDesc>
           </ProjectDetails>
         </ProjectDetailsContainer>
