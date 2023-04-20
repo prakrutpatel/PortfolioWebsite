@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import VoistrapImages from './ParallaxImages/VoistrapImages';
-import WhatsMyFoodImages from './ParallaxImages/WhatsMyFoodImages';
-import ComingOrNotImages from './ParallaxImages/ComingOrNotImages';
+import GymRatsImages from './ParallaxImages/GymRatsImages';
+import ContextRCNNImages from './ParallaxImages/ContextRCNNImages';
+import MakerSpaceImages from './ParallaxImages/MakerSpaceImages';
 import TeslaImages from './ParallaxImages/TeslaImages';
 
 const ImageContainer = styled.div`
@@ -61,7 +61,7 @@ class ImageContent extends Component {
     return (
       <ImageContainer>
         <ImageBox height={boxHeight}>
-          <VoistrapImages
+          <GymRatsImages
             boxHeight={boxHeight}
             index={1}
             scrollPercent={scrollPercent}
@@ -70,7 +70,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <WhatsMyFoodImages
+          <ContextRCNNImages
             boxHeight={boxHeight}
             index={2}
             scrollPercent={scrollPercent}
@@ -79,7 +79,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <ComingOrNotImages
+          <MakerSpaceImages
             boxHeight={boxHeight}
             index={3}
             scrollPercent={scrollPercent}

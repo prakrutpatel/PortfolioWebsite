@@ -93,7 +93,6 @@ class Work extends Component {
       this.scrollDirectionDown = false;
     }
     this.lastScrollTop = scrollDistance;
-    // console.log(scrollDistance);
 
     if (Math.floor(scrollDistance / vh) !== slideNumber
       && slideNumber < this.workDetails.length - 1) {
