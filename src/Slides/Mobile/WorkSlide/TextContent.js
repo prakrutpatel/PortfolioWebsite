@@ -8,6 +8,7 @@ position: fixed;
 top:0;
 left:0;
 display: flex;
+class: "ABC";
 flex-flow: column nowrap;
 /* border: 1px dashed black; */
 height:100vh;
@@ -151,7 +152,6 @@ animation-delay:0s;
 `;
 
 const BlockTextRevealNoAnim = styled.span`
-
 `;
 
 class TextContent extends Component {
