@@ -1,6 +1,12 @@
 *, *::before, *::after {
     box-sizing: inherit;
   }
+*{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
   
   html {
     /* this makes sure the padding and the border is included in the box sizing */
