@@ -27,7 +27,6 @@ class SocialLogo extends React.Component {
 
   notifySlack() {
     const { alternate } = this.props;
-    console.log(alternate);
     fetch(process.env.SLACK_URL, {
       credentials: 'omit',
       method: 'POST',

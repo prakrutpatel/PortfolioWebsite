@@ -41,7 +41,6 @@ const GlobalStyle = createGlobalStyle`
 html, body { margin: 0;}
 *, *:before, *:after { box-sizing: border-box; }
 `;
-console.log(window.innerWidth);
 
 class App extends Component {
   

@@ -1,11 +1,11 @@
-module.exports = {
-    "env": {
+module.exports = { 
+    "env": { 
     "node": true, 
     "browser": true,
     "es6": true
-    },
+     },
     "parser": "babel-eslint",
-    "rules": {
+    "rules": { 
     "react/jsx-filename-extension": "off",
     "react/prefer-stateless-function": "off",
     "global-require": "off",
@@ -14,6 +14,6 @@ module.exports = {
     "no-param-reassign": "off",
     "consistent-return": "off",
     "react/no-unused-state": "off"
-    },
+     },
     "extends": "airbnb"
-    };
+     };
