@@ -17,6 +17,7 @@ width: 100%;
 
 const ProjectName = styled.div`
   font-family: 'AvenirHeavy';
+  flex-flow: column wrap;
   @media ${device.mobileS} {
     font-size: 40px;
   }
@@ -37,6 +38,7 @@ const ProjectName = styled.div`
 
 const ProjectDesc = styled.div`
   padding-top:2%;
+  flex-flow: row wrap;
   font-family: 'AvenirBook';
   @media ${device.laptopL} {
     font-size: 30px;
@@ -85,7 +87,7 @@ const ProjectType = styled.div`
 
 const ProjectDetails = styled.div`
 display: flex;
-flex-flow: column nowrap;
+flex-flow: column wrap;
 /* border: 1px dashed black; */
 width: 100%;
 padding: 5%;
