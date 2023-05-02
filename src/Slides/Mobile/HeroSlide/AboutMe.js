@@ -5,7 +5,7 @@ import device from '../../../Assets/Responsive/breakpoints';
 const Container = styled.section`
     height: 100vh;/* Since pageSplitTime is 1.4 */
     width:100%;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
