@@ -165,7 +165,7 @@ class TextContent extends Component {
     this.refresh = this.refresh.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     this.refresh(nextProps);
   }
 
