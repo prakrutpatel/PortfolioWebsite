@@ -14,7 +14,7 @@ const Login = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -170vh;
+bottom: -140vh;
 transform-origin: left center;
 left: 2vw;
 /* border: 1px dashed red; */
@@ -28,7 +28,7 @@ const HomePage = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-125vh;
+bottom:-95vh;
 right: 2vw;
 transform-origin: right center;
 /* border: 1px dashed red; */
@@ -41,7 +41,7 @@ const Calender = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-110vh;
+bottom:-80vh;
 left: 2vw;
 transform-origin: left center;
 position: absolute;
@@ -55,7 +55,7 @@ const Profile = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-105vh;
+bottom:-75vh;
 right: 2vw;
 transform-origin: right center;
 position: absolute;

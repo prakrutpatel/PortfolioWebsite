@@ -7,30 +7,32 @@ import iPadImg from '../../../../Assets/Images/ContextRCNN/Ipad.png';
 
 const Laptop = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(0.55)`,
+    transform: `translate(0px,-${(scroll) * 15}%) scale(1.1)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -170vh;
+bottom: -70vh;
 transform-origin: left center;
 left:2vw;
 /* border: 1px dashed red; */
-height: 80vh; 
+height: 40vh; 
+width: 40vh;
 `;
 
 const Ipad = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.4)`,
+    transform: `translate(0px,-${(scroll) * 5.5}%) scale(1)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-105vh;
-left: 2.5vh;
+bottom:-40vh;
+left: 3.25vh;
 transform-origin: left center;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
+height: 28vh;
+width: 40vh;
 `;
 
 class ContextRCNNImages extends Component {

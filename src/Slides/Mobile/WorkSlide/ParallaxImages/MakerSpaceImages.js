@@ -8,42 +8,46 @@ import MakerSpaceComputerImg from '../../../../Assets/Images/MakerSpace/Computer
 
 const TV = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 18}%)`,
+    transform: `translate(0px,-${(scroll) * 18}%) scale(1.1)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -100vh;
+bottom: -70vh;
+left:6vw;
 transform-origin: center;
 /* border: 1px dashed red; */
-height:50vh; 
+height:40vh; 
+width:40vh;
 `;
 
 const Tablet = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.5)`,
+    transform: `translate(0px,-${(scroll) * 5}%) scale(1.1)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -80vh;
+bottom: -40vh;
 transform-origin: left center;
-left: 15vw
+left: 2vw
 /* border: 1px dashed red; */
-height: 50vh; 
+width: 40vh; 
+height: 27vh; 
 `;
 const Computer = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 12}%) scale(0.85)`,
+    transform: `translate(0px,-${(scroll) * 12}%) scale(1)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -90vh;
+bottom: -70vh;
 transform-origin: left center;
-left: 2vh;
+left: 3vh;
 /* border: 1px dashed red; */
-height: 50vh; 
+height:40vh; 
+width:40vh; 
 `;
 
 class MakerSpaceImages extends Component {
