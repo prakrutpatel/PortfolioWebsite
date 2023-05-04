@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 import device from '../../../Assets/Responsive/breakpoints';
 
+
 const Stage = styled.div`
 position: relative;
 /* border:1px solid black; */
@@ -73,13 +74,19 @@ class TitleReveal extends Component {
     super(props);
     this.state = {
       reveal: false,
+      scrollPercent: 0,
     };
     this.revealText = this.revealText.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
     const { timeDelay } = this.props;
     this.revealText(timeDelay);
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   revealText(timeout) {
@@ -88,10 +95,22 @@ class TitleReveal extends Component {
     }, timeout);
   }
 
+  handleScroll(event) {
+    const { body, documentElement } = event.srcElement;
+    const sd = Math.max(body.scrollTop, documentElement.scrollTop);
+    const sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 150);
+    const maxlimit = (documentElement.clientHeight * 150) / documentElement.scrollHeight;
+    if (sp >= 0 && sp <= maxlimit) {
+      this.setState({ scrollPercent: sp });
+    }
+  }
+
   render() {
     const { text, fontFam } = this.props;
     const { reveal } = this.state;
+    const { scrollPercent } = this.state;
     return (
+      <>
       <Stage>
         <TextToReveal
           fontFam={fontFam}
@@ -101,6 +120,17 @@ class TitleReveal extends Component {
         </TextToReveal>
         <WhiteBlock />
       </Stage>
+      {
+      scrollPercent < 1.8 ?
+      <div class="scroll-container">
+        <div class="field">
+          <div class="mouse"></div>
+        </div>
+      </div>
+      :
+      <></>
+      }
+      </>
     );
   }
 }

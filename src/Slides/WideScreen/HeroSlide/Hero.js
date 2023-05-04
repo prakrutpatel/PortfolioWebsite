@@ -5,10 +5,12 @@ import AboutMe from './AboutMe';
 class Hero extends Component {
   render() {
     return (
+      <>
       <React.Fragment>
         <NameAndJobTitle />
         <AboutMe />
       </React.Fragment>
+      </>
     );
   }
 }
