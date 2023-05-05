@@ -122,7 +122,7 @@ class TitleReveal extends Component {
       </Stage>
       {
       scrollPercent < 1.8 ?
-      <div class="scroll-container">
+      <div class="scroll-container" >
         <div class="field">
           <div class="mouse"></div>
         </div>
