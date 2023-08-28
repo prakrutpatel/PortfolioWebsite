@@ -15,6 +15,7 @@ import MobileResume from './Slides/Mobile/ContactSlide/Resume';
 import MadeReveal from './Slides/Mobile/ContactSlide/MadeReveal';
 import './Assets/index.css';
 import "./App.css";
+import Mp3 from './../public/Akari.mp3'
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -48,12 +49,20 @@ class App extends Component {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
+    document.getElementById("backgroundMusic").play().catch((error) => {
+      document.addEventListener('click', () => {
+        
+        document.getElementById("backgroundMusic").play()
+      }, { once: true } )})
   }
 
   
   render() {
     return (
       <React.Fragment>
+          <audio id="backgroundMusic">
+              <source src={Mp3} type="audio/mpeg" />
+          </audio>
         <MediaQuery query="(min-device-width: 1224px)">
           <WideScreenHero />
           <WideScreenWork />
