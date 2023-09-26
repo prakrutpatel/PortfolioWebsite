@@ -29,15 +29,15 @@
     "parcel-bundler": "^1.10.3"
   },
   "dependencies": {
-    "firebase": "^9.9.3",
-    "libxmljs": "^1.0.8",
-    "node-gyp": "^9.3.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.0",
-    "react-responsive": "^6.0.1",
-    "styled-components": "^4.0.3",
-    "ua-parser-js": "^0.7.19",
+    "firebase": "^9.23.0",
+    "libxmljs": "^1.0.9",
+    "node-gyp": "^9.4.0",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-responsive": "^6.1.2",
+    "styled-components": "^4.4.1",
+    "ua-parser-js": "^0.7.36",
     "vh-check": "^2.0.5"
   }
 }
