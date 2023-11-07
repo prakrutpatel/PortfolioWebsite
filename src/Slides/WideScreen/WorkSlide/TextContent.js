@@ -226,6 +226,8 @@ class TextContent extends Component {
               :<></>}
               {number =='03' ? <BlockTextReveal refreshToggle={refreshToggle} inline={false}> {<span>This project is viewable <a href="https://mobilemaker.eckerd.edu" target="_blank" rel="noreferrer noopener">here</a>.</span>} </BlockTextReveal>
               :<></>}
+              {number =='04' ? <BlockTextReveal refreshToggle={refreshToggle} inline={false}> {<span>This project is hosted <a href="https://animewatchdog.com" target="_blank" rel="noreferrer noopener">here</a>.</span>} </BlockTextReveal>
+              :<></>}
             </ProjectDesc>
           </ProjectDetails>
         </ProjectDetailsContainer>

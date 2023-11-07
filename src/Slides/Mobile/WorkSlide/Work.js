@@ -52,10 +52,10 @@ class Work extends Component {
       },
       {
         number: '04',
-        projectName: 'Tesla app',
-        projectDesc: 'Android & iOS app concept to control Tesla cars remotely.',
-        projectType: 'ANDROID & iOS APP CONCEPT',
-        roles: ['Full stack Developer', 'UI Designer'],
+        projectName: 'Anime WatchDog',
+        projectDesc: 'Website to get text reminder when your favourite anime shows drop a new episode. Includes link to episode on Crunchyroll and other providers.',
+        projectType: 'WEB APP',
+        roles: ['Front-end Developer','Backend Engineer'],
       },
       {
         number: '',

@@ -5,7 +5,7 @@ import vhCheck from 'vh-check';
 import GymRatsImages from './ParallaxImages/GymRatsImages';
 import ContextRCNNImages from './ParallaxImages/ContextRCNNImages';
 import MakerSpaceImages from './ParallaxImages/MakerSpaceImages';
-import TeslaImages from './ParallaxImages/TeslaImages';
+import WatchDogImages from './ParallaxImages/WatchDogImages';
 
 const ImageContainer = styled.div`
 /* border: 0.1px dashed black; */
@@ -92,7 +92,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <TeslaImages
+          <WatchDogImages
             boxHeight={boxHeight}
             index={4}
             scrollPercent={scrollPercent}
