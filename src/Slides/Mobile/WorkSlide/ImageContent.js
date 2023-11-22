@@ -14,6 +14,8 @@ height:620vh;
 margin-bottom:30vh;
 display: flex;
 flex-flow: column nowrap;
+position: relative; /* Add position: relative; */
+z-index: 1;
 `;
 
 const ImageBox = styled.div`
@@ -21,6 +23,7 @@ const ImageBox = styled.div`
 margin-top:30vh;
 height: 100vh;
 position: relative;
+z-index: 1;
 `;
 
 class ImageContent extends Component {

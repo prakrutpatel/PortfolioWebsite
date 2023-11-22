@@ -13,6 +13,7 @@ flex-flow: column nowrap;
 /* border: 1px dashed black; */
 height:100vh;
 width: 100%;
+z-index: 2;
 `;
 
 const ProjectName = styled.div`
@@ -34,14 +35,17 @@ const ProjectName = styled.div`
     font-size: 90px;
   }
   /* border: 1px dashed black; */
+  z-index: 2;
 `;
 
 const ProjectDesc = styled.div`
   padding-top:2%;
   flex-flow: row wrap;
   font-family: 'AvenirBook';
+
   @media ${device.laptopL} {
     font-size: 30px;
+    
   }
   @media ${device.desktop} {
     font-size: 50px;
@@ -106,6 +110,7 @@ height: 100%;
 const appearText = () => keyframes`
 0%{
   color: #FFF;
+  
 }
 100%{
   color: #333;
@@ -134,6 +139,8 @@ let BlockTextReveal = styled.span`
 const BlockTextRevealQuick = styled.span`
 display:${props => (props.inline ? 'inline' : 'block')};
 color: #FFF;
+background-color: ${props => "rgba(255,255,255, 0.85)"};
+opacity: 1;
 animation: ${appearText} 0.0001s linear forwards;
 animation-delay: 0.5s;
 position: relative;
@@ -150,6 +157,7 @@ height:100%;
 background: #222;
 animation: ${revBlock} 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 animation-delay:0s;
+
 }
 `;
 
@@ -177,6 +185,7 @@ class TextContent extends Component {
         () => {
           BlockTextReveal = BlockTextRevealQuick;
           this.setState({ refreshBlock: false });
+          
         });
     }
   }
@@ -188,7 +197,7 @@ class TextContent extends Component {
     return (
       <TextContainer>
         <ProjectID>
-          <BlockTextReveal refreshToggle={refreshToggle} inline>
+          <BlockTextReveal refreshToggle={refreshToggle}  inline>
             {number}
           </BlockTextReveal>
         </ProjectID>
