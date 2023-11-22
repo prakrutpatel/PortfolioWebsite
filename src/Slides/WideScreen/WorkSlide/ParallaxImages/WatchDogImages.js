@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import PhoneImg from '../../../../Assets/Images/WatchDog/Phone.png';
 import IpadImg from '../../../../Assets/Images/WatchDog/iPad.png';
+import MacbookImg from '../../../../Assets/Images/WatchDog/Macbook.png';
 
 
 const Phone = styled.img.attrs({
@@ -31,32 +32,17 @@ right: 2vw;
 height: 80vh;
 `;
 
-const Battery = styled.img.attrs({
+const Macbook = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.7)`,
-  }),
-})`
-transition: transform 0.2s ease-out;
-bottom:-75vh;
-left:2vw;
-position: absolute;
-/* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.8px);
-`;
-
-const Lock = styled.img.attrs({
-  style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.6)`,
+    transform: `translate(0px,-${(scroll) * 2}%) scale(0.85)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 bottom:-55vh;
-right: 5vw;
+right: -2vw;
 position: absolute;
 /* border: 1px dashed red; */
 height: 80vh;
-filter: blur(1.2px);
 `;
 
 class WatchDog extends Component {
@@ -74,6 +60,7 @@ class WatchDog extends Component {
       <React.Fragment>
         <Phone src={PhoneImg} scroll={scrollPercent} alt="Phone" />
         <Ipad src={IpadImg} scroll={scrollPercent} alt="iPad" />
+        <Macbook src={MacbookImg} scroll={scrollPercent} alt="Macbook" />
 
       </React.Fragment>
     );
@@ -89,7 +76,3 @@ WatchDog.propTypes = {
 };
 
 export default WatchDog;
-/*
-<Tyre src={teslaTyreImg} scroll={scrollPercent} alt="teslaTyre" />
-<Heat src={teslaHeatImg} scroll={scrollPercent} alt="teslaHeat" />
-*/
