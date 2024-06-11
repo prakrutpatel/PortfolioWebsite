@@ -29,7 +29,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "firebase": "^9.23.0",
+    "firebase": "^10.12.2",
     "libxmljs": "^1.0.9",
     "node-gyp": "^9.4.0",
     "prop-types": "^15.8.1",
