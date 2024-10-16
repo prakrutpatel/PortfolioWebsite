@@ -109,7 +109,7 @@ class Resume extends Component {
       <Container>
         <ContactTitle scrollPercent={scrollPercent}>RESUME</ContactTitle>
         <SocialMediaIcons>
-          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
+          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={process.env.PUBLIC_URL + Pdf} />
         </SocialMediaIcons>
       </Container>
       <Madewith>Made with ReactJS</Madewith>

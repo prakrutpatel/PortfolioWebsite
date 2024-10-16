@@ -86,7 +86,7 @@ class Resume extends Component {
       <Container>
         <ResumeTitle>RESUME</ResumeTitle>
             <ResumeIcon>
-            <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
+            <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={process.env.PUBLIC_URL + Pdf} />
             </ResumeIcon>
       </Container>
     );
