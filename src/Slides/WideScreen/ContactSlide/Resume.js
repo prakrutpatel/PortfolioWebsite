@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
-import Pdf from "./static/Patel_Resume.pdf";
+import Pdf from "../../../static/Patel_Resume.pdf";
 
 const Container = styled.div`
     height: 50vh;/* Since pageSplitTime is 1.4 */
