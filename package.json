@@ -1,8 +1,9 @@
 {
   "name": "personal_portfolio",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Prakrut Patel's Portfolio Website",
   "main": "App.js",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
