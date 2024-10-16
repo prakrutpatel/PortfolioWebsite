@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import resumeImg from '../../../Assets/Images/Social/resume.svg';
-import Pdf from '../../../Assets/Images/Social/Patel_Resume.pdf';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
+const Pdf = '/Patel_Resume.pdf';
 
 const Container = styled.section`
     height: 60vh;
