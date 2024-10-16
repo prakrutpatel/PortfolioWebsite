@@ -1,6 +1,6 @@
 {
   "name": "personal_portfolio",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "Prakrut Patel's Portfolio Website",
   "main": "App.js",
   "type":"module",
