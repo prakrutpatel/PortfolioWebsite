@@ -4,7 +4,7 @@ import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
-const Pdf = '/Patel_Resume.pdf';
+const Pdf = "/Resume/Patel_Resume.pdf";
 
 const Container = styled.section`
     height: 60vh;
@@ -86,7 +86,7 @@ class Resume extends Component {
       <Container>
         <ResumeTitle>RESUME</ResumeTitle>
             <ResumeIcon>
-            <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={process.env.PUBLIC_URL + Pdf} />
+            <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
             </ResumeIcon>
       </Container>
     );

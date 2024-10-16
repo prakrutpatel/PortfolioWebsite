@@ -4,7 +4,7 @@ import resumeImg from '../../../Assets/Images/Social/resume.svg';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
 
-const Pdf = '/Patel_Resume.pdf';
+const Pdf = "/Resume/Patel_Resume.pdf";
 
 const Container = styled.div`
     height: 50vh;/* Since pageSplitTime is 1.4 */
@@ -109,7 +109,7 @@ class Resume extends Component {
       <Container>
         <ContactTitle scrollPercent={scrollPercent}>RESUME</ContactTitle>
         <SocialMediaIcons>
-          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={process.env.PUBLIC_URL + '/Patel_Resume.pdf'} />
+          <SocialLogo imgURL={resumeImg} alternate="Resume" redirectURL={Pdf} />
         </SocialMediaIcons>
       </Container>
       <Madewith>Made with ReactJS</Madewith>
