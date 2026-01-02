@@ -48,20 +48,12 @@ class App extends Component {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-    document.getElementById("backgroundMusic").play().catch((error) => {
-      document.addEventListener('click', () => {
-        
-        document.getElementById("backgroundMusic").play()
-      }, { once: true } )})
   }
 
   
   render() {
     return (
       <React.Fragment>
-          <audio id="backgroundMusic">
-              <source src="https://firebasestorage.googleapis.com/v0/b/portfolio-b7e7c.appspot.com/o/Akari.mp3?alt=media&token=e8a00eb4-3294-4eec-8311-df2481cdbd49" type="audio/mpeg" />
-          </audio>
         <MediaQuery query="(min-device-width: 1224px)">
           <WideScreenHero />
           <WideScreenWork />
