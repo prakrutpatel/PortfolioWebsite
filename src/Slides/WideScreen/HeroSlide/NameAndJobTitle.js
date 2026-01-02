@@ -20,7 +20,7 @@ class NameAndJobTitle extends Component {
       <Container>
         <NameReveal text="Prakrut Patel" fontFam="Playball" timeDelay={500} />
         <br />
-        <TitleReveal text="Software Engineer" fontFam="AvenirRoman" timeDelay={1300} />
+        <TitleReveal text="Computer Vision Research Engineer" fontFam="AvenirRoman" timeDelay={1300} />
       </Container>
     );
   }

@@ -60,7 +60,7 @@ class NameAndJobTitle extends Component {
     return (
       <Container>
         <Name>Prakrut Patel</Name>
-        <Title>Software Engineer</Title>
+        <Title>Computer Vision Research Engineer</Title>
       </Container>
     );
   }
